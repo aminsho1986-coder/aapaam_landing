@@ -1,0 +1,29 @@
+//=======================HEADER=====================
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+  .sectionTitle {
+    padding: 0 12px 24px 12px;
+  }
+  .sectionDescription {
+    font-size: 1.5rem;
+    padding: 0 12px 64px 12px;
+    @media (max-width: 950px) {
+      padding-bottom: 32px;
+    }
+  }
+  img {
+    height: auto;
+    @media (max-width: 950px) {
+      width: 100%;
+      padding: 0 22px;
+    }
+    @media (max-width: 600px) {
+      width: 100%;
+      padding: 0 6px;
+    }
+  }
+}

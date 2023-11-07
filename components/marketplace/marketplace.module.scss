@@ -1,0 +1,284 @@
+//=======================HEADER====================
+.header {
+  margin-top: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .sectionTitle {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  img {
+    margin: 32px 0 32px 0;
+    height: auto;
+    @media (max-width: 950px) {
+      width: 100%;
+      padding: 0 22px;
+    }
+    @media (max-width: 600px) {
+      width: 100%;
+      padding: 0 6px;
+      margin: 24px 0 32px 0;
+    }
+  }
+  .buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    button {
+      width: 280px;
+      height: 53px;
+      font-size: 1.2rem;
+      margin: 8px;
+    }
+  }
+}
+//=======================ROUND IMG==================
+.roundImg {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 82px;
+  padding: 50px 0 ;
+  .sectionTitle {
+    padding-bottom: 64px;
+    @media (max-width: 1200px) {
+      padding-bottom: 32px;
+    }
+  }
+  .imgRow {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 1200px) {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+    .sectionItem {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 0 40px;
+      @media (max-width: 1200px) {
+        padding: 12px 4px;
+      }
+      img {
+        width: 300px;
+        height: 300px;
+        @media (max-width: 1200px) {
+          width: 300px;
+          height: 300px;
+        }
+        @media (max-width: 1200px) {
+          width: 250px;
+          height: 250px;
+        }
+      }
+      span:nth-child(2) {
+        color: #979797;
+        font-size: 1.3rem;
+        text-align: center;
+        padding-top: 40px;
+        @media (max-width: 1200px) {
+          padding-top: 28px;
+        }
+      }
+      span:nth-child(3) {
+        font-size: 1rem;
+        text-align: center;
+        padding-top: 10px;
+        @media (max-width: 1200px) {
+          padding-top: 8px;
+        }
+      }
+    }
+  }
+}
+//=======================DETAILS====================
+.details {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  @media (max-width: 850px) {
+    padding-top: 0;
+  }
+}
+.detailItem {
+  width: 100%;
+  max-width: 1200px;
+  margin: 48px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: 1250px) {
+    max-width: 1010px;
+  }
+  @media (max-width: 1050px) {
+    flex-direction: column !important;
+  }
+  .textContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    @media (max-width: 1050px) {
+      width: 100%;
+      max-width: 475px;
+      padding: 0 8px !important;
+    }
+    .sectionBlueTitle {
+      width: 100%;
+      text-align: right;
+      padding-bottom: 5px;
+      font-size: 2rem;
+      font-weight: lighter;
+      @media (max-width: 1250px) {
+        padding-bottom: 0px;
+      }
+      @media (max-width: 1050px) {
+        padding-top: 32px;
+        padding-bottom: 8px;
+      }
+      @media (max-width: 450px) {
+        font-size: 2rem;
+      }
+      @media (max-width: 350px) {
+        font-size: 1.6rem;
+      }
+    }
+    .sectionDescription {
+      color: var(--light-blue-text-color);
+      padding-bottom: 30px;
+      font-weight: 500;
+      font-size: 1.75rem;
+      width: 100%;
+      @media (max-width: 1250px) {
+        padding-bottom: 16px;
+      }
+      @media (max-width: 450px) {
+        font-size: 1.4rem;
+      }
+      @media (max-width: 350px) {
+        font-size: 1.1rem;
+      }
+    }
+    .description {
+      color: var(--gray-500);
+      font-size: 1.15rem;
+      text-align: start;
+      @media (max-width: 1050px) {
+        text-align: start;
+      }
+      @media (max-width: 450px) {
+        font-size: 1.05rem;
+      }
+      @media (max-width: 350px) {
+        font-size: 0.95rem;
+      }
+    }
+    button {
+      font-size: 1.2rem;
+      width: 280px;
+      height: 52px;
+      margin-top: 52px;
+      @media (max-width: 1250px) {
+        margin-top: 24px;
+      }
+      @media (max-width: 450px) {
+        font-size: 1.05rem;
+      }
+      @media (max-width: 350px) {
+        font-size: 0.95rem;
+        width: 260px;
+      }
+    }
+  }
+  .imgContainer {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s;
+    @media (max-width: 1050px) {
+      max-width: 475px;
+      width: 100%;
+      padding: 0 8px !important;
+    }
+    .mainImg {
+      width: 100%;
+      height: 100%;
+      border-radius: 2px;
+    }
+    .centerImg {
+      position: absolute;
+      bottom: -80px;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      transition: all 0.4s;
+    }
+  }
+  .imgContainer:hover {
+    transform: scale(1.1);
+    .centerImg {
+      bottom: 50%;
+    }
+  }
+}
+.detailItem:nth-child(2n) {
+  flex-direction: row-reverse;
+  .textContainer {
+    margin-right: 16px;
+    padding: 0 64px 0 32px;
+    @media (max-width: 1250px) {
+      margin-right: 8px;
+      padding: 0 16px 0 16px;
+    }
+    @media (max-width: 1050px) {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .imgContainer {
+    margin-left: 16px;
+    @media (max-width: 1250px) {
+      margin-left: 8px;
+    }
+    @media (max-width: 1050px) {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+.detailItem:nth-child(2n + 1) {
+  .textContainer {
+    margin-left: 16px;
+    padding: 0 32px 0 64px;
+    @media (max-width: 1250px) {
+      padding: 0 16px 0 16px;
+      margin-left: 8px;
+    }
+    @media (max-width: 1050px) {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .imgContainer {
+    margin-right: 16px;
+    @media (max-width: 1250px) {
+      margin-right: 8px;
+    }
+    @media (max-width: 1050px) {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

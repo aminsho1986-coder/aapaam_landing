@@ -1,0 +1,27 @@
+//=============================BOTTOM GRAY=======================
+.bottom-gray {
+  direction: ltr;
+  width: 100%;
+  margin-top: 100px;
+  padding: 64px 0px;
+  background-color: var(--gray-bg);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .section-blue-title {
+    max-width: 600px;
+  }
+  .button-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 16px;
+    button {
+      width: 220px;
+      height: 52px;
+      margin: 16px 12px 0px 12px;
+      font-size: 1.1rem;
+    }
+  }
+}

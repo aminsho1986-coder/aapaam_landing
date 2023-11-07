@@ -1,0 +1,517 @@
+//====================HEADER=======================
+.header {
+  margin-top: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 50px;
+  .sectionTitle {
+    max-width: 750px;
+    padding: 0 12px 24px 12px;
+    @media (max-width: 400px) {
+      padding: 0 12px;
+    }
+  }
+  .imgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding-top: 82px;
+    width: 100%;
+    padding: 82px 16px 0px 16px;
+    @media (max-width: 400px) {
+      padding: 64px 12px 0px 12px;
+    }
+    .treeRow {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      width: 100%;
+      @media (max-width: 600px) {
+        justify-content: space-evenly;
+      }
+      img:nth-child(1),
+      img:nth-child(2),
+      img:nth-child(4),
+      img:nth-child(5) {
+        margin: 0 10px;
+        @media (max-width: 600px) {
+          width: 30px;
+          height: 60px;
+        }
+        @media (max-width: 450px) {
+          width: 30px;
+          height: 60px;
+        }
+        @media (max-width: 380px) {
+          width: 30px;
+          height: 60px;
+        }
+      }
+      img:nth-child(3) {
+        margin: 0 64px;
+        @media (max-width: 600px) {
+          width: 50px;
+          margin: 0;
+          height: 100px;
+        }
+        @media (max-width: 450px) {
+          width: 50px;
+          height: 100px;
+        }
+        @media (max-width: 380px) {
+          width: 50px;
+          height: 100px;
+        }
+      }
+    }
+    .bottomLine {
+      width: 100%;
+      height: 8px;
+      max-width: 850px;
+      background-color: #a9a8a9;
+    }
+  }
+  .buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    width: 100%;
+    @media (max-width: 700px) {
+      flex-direction: column;
+      padding-top: 52px;
+    }
+    button {
+      width: 280px;
+      height: 53px;
+      font-size: 1.2rem;
+      @media (max-width: 350px) {
+        width: 90%;
+      }
+    }
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (max-width: 350px) {
+        width: 100%;
+      }
+    }
+    span {
+      padding: 0 32px;
+      @media (max-width: 700px) {
+        padding: 18px 0;
+      }
+      @media (max-width: 500px) {
+        padding: 12px 0;
+      }
+    }
+  }
+}
+//====================QUESTIONS=====================
+.questions {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.questionItem {
+  width: 100%;
+  max-width: 1200px;
+  margin: 32px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  @media (max-width: 1250px) {
+    max-width: 1010px;
+  }
+  @media (max-width: 1050px) {
+    flex-direction: column-reverse !important;
+    max-width: 480px;
+    padding: 0 12px;
+  }
+  @media (max-width: 400px) {
+    padding: 0 8px;
+  }
+  .textContainer {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+    @media (max-width: 1050px) {
+      width: 100%;
+      align-items: center;
+    }
+    .sectionBlueTitle {
+      text-align: start;
+      padding-bottom: 48px;
+      font-size: 2rem;
+      @media (max-width: 1250px) {
+        font-size: 1.75rem;
+      }
+      @media (max-width: 1050px) {
+        text-align: center;
+        padding-bottom: 18px;
+        padding-top: 28px;
+      }
+      @media (max-width: 400px) {
+        font-size: 1.2rem;
+      }
+    }
+    .description {
+      color: var(--gray-500);
+      font-size: 1.1rem;
+      @media (max-width: 1250px) {
+        font-size: 1.1rem;
+      }
+      @media (max-width: 1050px) {
+        text-align: center;
+      }
+      @media (max-width: 400px) {
+        font-size: 0.9rem;
+      }
+    }
+  }
+  .imgContainer {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s;
+    @media (max-width: 1050px) {
+      width: 100%;
+    }
+    .mainImg {
+      width: 100%;
+      height: 100%;
+      border-radius: 2px;
+    }
+    .centerImg {
+      position: absolute;
+      // bottom: 50%;
+      bottom: -80px;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      transition: all 0.4s;
+    }
+  }
+  .imgContainer:hover {
+    transform: scale(1.1);
+    .centerImg {
+      bottom: 50%;
+    }
+  }
+}
+.questionItem:nth-child(2n + 1) {
+  .textContainer {
+    margin-right: 16px;
+    padding: 0 64px 0 32px;
+    @media (max-width: 1250px) {
+      margin-right: 8px;
+      padding: 0 4px 0 22px;
+    }
+    @media (max-width: 1050px) {
+      margin: 0px;
+      padding: 0px;
+    }
+  }
+  .imgContainer {
+    margin-left: 16px;
+    @media (max-width: 1250px) {
+      margin-left: 8px;
+    }
+    @media (max-width: 1050px) {
+      margin: 0px;
+      padding: 0px;
+    }
+  }
+}
+.questionItem:nth-child(2n) {
+  flex-direction: row-reverse;
+  .textContainer {
+    margin-left: 16px;
+    padding: 0 32px 0 64px;
+    @media (max-width: 1250px) {
+      margin-left: 8px;
+      padding: 0 16px 0 16px;
+    }
+    @media (max-width: 1050px) {
+      margin: 0px;
+      padding: 0px;
+    }
+  }
+  .imgContainer {
+    margin-right: 16px;
+    @media (max-width: 1250px) {
+      margin-right: 8px;
+    }
+    @media (max-width: 1050px) {
+      margin: 0px;
+      padding: 0px;
+    }
+  }
+}
+//====================JOURNEY=================
+.journey {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.journeyImg {
+  width: 100%;
+  height: 370px;
+  background-image: url(/images/main/journey.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  @media (max-width: 1000px) {
+    background-position: center;
+  }
+  span:nth-child(1) {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    z-index: 3;
+    @media (max-width: 800px) {
+      font-size: 1.7rem;
+      padding: 0 24px;
+    }
+    @media (max-width: 500px) {
+      font-size: 1.4rem;
+      padding: 0 16px;
+    }
+    @media (max-width: 350px) {
+      font-size: 1.1rem;
+      padding: 0 8px;
+    }
+  }
+  span:nth-child(2) {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: lighter;
+    text-align: center;
+    max-width: 720px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    z-index: 3;
+    @media (max-width: 800px) {
+      font-size: 1.05rem;
+      padding: 24px 24px;
+    }
+    @media (max-width: 500px) {
+      font-size: 0.95rem;
+      padding: 18px 16px;
+    }
+    @media (max-width: 350px) {
+      font-size: 0.85rem;
+      padding: 12px 8px;
+    }
+  }
+  .buttonRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 3;
+    direction: ltr;
+  }
+  button {
+    height: 48px;
+    width: 200px;
+    font-size: 1.1rem;
+    margin: 8px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 600px) {
+      width: 125px;
+      height: 36px;
+      border-radius: 18px;
+      font-size: 0.9rem;
+    }
+    
+    img {
+      @media (max-width: 600px) {
+        width: 18px;
+        margin-left: 5px;
+      }
+    }
+    .buttonText {
+      font-size: 1.1rem;
+      padding-left: 12px;
+      padding-right: 15px;
+      @media (max-width: 600px) {
+        font-size: 0.9rem;
+        padding-left: 12px;
+        padding-right: 8px;
+      }
+    }
+  }
+  .blueLightButton{
+    background-color: #00b2c1;
+    border: 1px solid #00b2c1;
+    color: #f5f5f5;
+  }
+  .blueLightButton:hover {
+    background-color: transparent;
+    border: 1px solid #00b2c1;
+    color: #00b2c1;
+  }
+  .greenLinear {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.42) 0%,
+        rgba(0, 0, 0, 0.42) 100%
+      ),
+      linear-gradient(to right, #a6ce39 0%, #a6ce39 40%, transparent 75%);
+    @media (max-width: 1700px) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.42) 0%,
+          rgba(0, 0, 0, 0.42) 100%
+        ),
+        linear-gradient(to right, #a6ce39 0%, #a6ce39 25%, transparent 75%);
+    }
+    @media (max-width: 1100px) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.42) 0%,
+          rgba(0, 0, 0, 0.42) 100%
+        ),
+        linear-gradient(to right, #a6ce39 0%, #a6ce39 15%, transparent 75%);
+    }
+    @media (max-width: 900px) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.42) 0%,
+          rgba(0, 0, 0, 0.42) 100%
+        ),
+        linear-gradient(to right, #a6ce39 0%, #a6ce39 5%, transparent 75%);
+    }
+    @media (max-width: 600px) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.42) 0%,
+          rgba(0, 0, 0, 0.42) 100%
+        ),
+        linear-gradient(to right, #a6ce39 -5%, transparent 75%);
+    }
+  }
+}
+//=====================PLANS======================
+.plans {
+  width: 100%;
+  padding-top: 52px;
+  padding-bottom: 82px;
+  // background-color: var(--green-bg);
+  background-image: linear-gradient(to bottom, #8dc63f 0%, #00b2c1 100%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .sectionTitle {
+    color: white;
+    padding-bottom: 12px;
+  }
+  .sectionDescription {
+    padding-bottom: 48px;
+  }
+  .plansContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+  }
+}
+.planItem {
+  margin: 16px 8px;
+  padding: 18px 28px 42px 28px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 18px;
+  background-color: white;
+  transition: all 0.4s;
+  height: 450px;
+  position: relative;
+  @media (max-width: 800px) {
+    height: 400px;
+  }
+  @media (max-width: 500px) {
+    padding: 16px 16px 32px 16px;
+  }
+  .topTexts {
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .title {
+      color: #8b8b8b;
+      font-size: 1.6rem;
+      font-weight: normal;
+    }
+    .value {
+      color: #8b8b8b;
+      font-size: 2.2rem;
+      font-weight: bolder;
+      @media (max-width: 800px) {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  .line {
+    width: 95%;
+    height: 1px;
+    background-color: #a9a8a9;
+    margin-bottom: 32px;
+  }
+  .benefitItem {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    span {
+      font-size: 0.8rem;
+      color: var(--gray-500);
+      padding-right: 12px;
+      margin: 5px 0;
+    }
+  }
+  .blueLightButton {
+    width: 210px;
+    height: 54px;
+    font-size: 1.2rem;
+    border-radius: 27px;
+    margin: 52px 20px 0px 20px;
+    @media (max-width: 700px) {
+      margin: 52px 12px 0px 12px;
+    }
+    @media (max-width: 400px) {
+      margin: 52px 0px 0px 0px;
+    }
+  }
+}
+.planItem:hover {
+  transform: scale(1.1);
+}

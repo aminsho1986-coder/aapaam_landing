@@ -1,0 +1,76 @@
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  .dots-container {
+    width: 44px;
+    height: 12px;
+    position: relative;
+    opacity: 0;
+    transition: all 0.4s;
+  }
+  .dots-container div {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  .dots-container div:nth-child(1) {
+    left: 2px;
+    animation: Scale1 0.8s infinite;
+  }
+  .dots-container div:nth-child(2) {
+    left: 2px;
+    animation: Translate 0.8s infinite;
+  }
+  .dots-container div:nth-child(3) {
+    left: 17px;
+    animation: Translate 0.8s infinite;
+  }
+  .dots-container div:nth-child(4) {
+    left: 32px;
+    animation: Scale0 0.8s infinite;
+  }
+  .label {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s;
+    opacity: 1;
+  }
+}
+.button-container.loading {
+  .dots-container {
+    opacity: 1 !important;
+  }
+  .label {
+    opacity: 0 !important;
+  }
+}
+@keyframes Translate {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(15px);
+  }
+}
+@keyframes Scale1 {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes Scale0 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}

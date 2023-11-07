@@ -1,0 +1,16 @@
+//====================STEPS=====================
+.section-steps {
+  @media (max-width: 800px) {
+    margin-top: 32px;
+  }
+  .section-title {
+    color: var(--blue-text-color);
+    font-size: 2rem;
+    padding: 0 16px;
+  }
+}
+//===================COMPANIES================
+.companies {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}

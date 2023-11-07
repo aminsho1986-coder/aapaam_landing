@@ -1,0 +1,71 @@
+//=====================OFFSET==========================
+.offset {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 128px;
+  @media (max-width: 800px) {
+    margin-top: 64px;
+  }
+  .section-title {
+    max-width: 780px;
+    text-align: center;
+    padding: 0 24px 75px 24px;
+    @media (max-width: 600px) {
+      padding: 0 12px 36px 12px;
+    }
+  }
+}
+.offset-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  @media (max-width: 900px) {
+    flex-wrap: wrap;
+  }
+}
+.offset-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 450px;
+  padding: 32px 0px;
+  @media (max-width: 1200px) {
+    width: 300px;
+  }
+  .main-img {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tree-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 84px;
+    padding-bottom: 42px;
+    img {
+      padding: 0 2px;
+    }
+  }
+  .light-text {
+    color: var(--blue-text-color);
+    font-size: 1.2rem;
+    text-align: center;
+    padding-top: 10px;
+    @media (max-width: 500px) {
+      padding: 0 12px 12px 12px;
+    }
+  }
+  .bold-text {
+    color: var(--blue-text-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 0 12px 0 12px;
+  }
+}

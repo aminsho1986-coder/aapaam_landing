@@ -1,0 +1,45 @@
+//===============================COMPANIES=======================
+.companies {
+  display: flex;
+  width: 100%;
+  padding-top: 100px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .section-title {
+    padding: 0 12px;
+    margin-bottom: 32px;
+    @media (max-width: 500px) {
+      margin-bottom: 8px;
+    }
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    width: 180px !important;
+    height: 150px !important;
+    padding: 0 42px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    cursor: grab;
+  }
+  .swiper-slide img {
+    width: 100%;
+    height: 85px;
+    object-fit: contain;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #0e8c8a !important;
+  }
+}
+.bottom-companies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  padding-top: 32px;
+}

@@ -1,0 +1,312 @@
+//====================HEADER======================
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px !important;
+  .sectionTitle {
+    padding-bottom: 32px;
+  }
+}
+.headerItemRow {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.headerItem {
+  width: 350px;
+  background-color: var(--light-blue-bg);
+  border-radius: 4px;
+  padding: 22px 36px 38px 36px;
+  margin: 16px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 340px;
+  @media (max-width: 800px) {
+    padding: 16px 22px 22px 22px;
+    margin: 16px 12px;
+    height: 240px;
+  }
+  @media (max-width: 400px) {
+    padding: 20px 12px 20px 12px;
+    margin: 16px 8px;
+  }
+  span:nth-child(1) {
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding-bottom: 32px;
+    color: white;
+    @media (max-width: 500px) {
+      font-size: 1.7rem;
+      padding-bottom: 12px;
+    }
+    @media (max-width: 400px) {
+      font-size: 1.4rem;
+      padding-bottom: 12px;
+    }
+  }
+  span:nth-child(2) {
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 100;
+    @media (max-width: 500px) {
+      font-size: 1.05rem;
+    }
+    @media (max-width: 400px) {
+      font-size: 0.95rem;
+    }
+  }
+}
+//=======================STORY====================
+.story {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 84px !important;
+  @media (max-width: 1100px) {
+    margin-top: 32px !important;
+  }
+  @media (max-width: 600px) {
+    margin-top: 24px !important;
+  }
+  .sectionTitle {
+    padding-bottom: 32px;
+    @media (max-width: 1100px) {
+      padding-bottom: 14px;
+    }
+    @media (max-width: 600px) {
+      padding-bottom: 8px;
+    }
+  }
+}
+.storyRow {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.storyItem {
+  width: 280px;
+  height: 200px;
+  background-color: white;
+  border-radius: 4px;
+  padding: 22px 36px 38px 36px;
+  margin: 16px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: relative;
+  @media (max-width: 800px) {
+    padding: 16px 22px 22px 22px;
+    margin: 12px 12px;
+    height: 150px;
+  }
+  @media (max-width: 400px) {
+    padding: 20px 12px 20px 12px;
+    margin: 8px 8px;
+  }
+  span:nth-child(1) {
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding-bottom: 32px;
+    color: var(--light-blue-text-color);
+    @media (max-width: 500px) {
+      padding-bottom: 12px;
+      font-size: 1.7rem;
+    }
+    @media (max-width: 400px) {
+      padding-bottom: 16px;
+      font-size: 1.4rem;
+    }
+  }
+  span:nth-child(2) {
+    font-size: 1rem;
+    color: #0b4349;
+    font-weight: 300;
+    @media (max-width: 500px) {
+      font-size: 1.05rem;
+    }
+    @media (max-width: 400px) {
+      font-size: 0.95rem;
+    }
+  }
+  img {
+    position: absolute;
+    top: 28px;
+    left: 8px;
+    width: 100px;
+    height: 28px;
+    @media (max-width: 500px) {
+      width: 105px;
+      height: 46px;
+    }
+    @media (max-width: 400px) {
+      width: 70px;
+      height: auto;
+    }
+  }
+}
+//================TEAM==================
+.team {
+  width: 100%;
+  margin-top: 84px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (max-width: 1100px) {
+    margin-top: 48px !important;
+  }
+  .sectionTitle {
+    padding-bottom: 64px;
+    @media (max-width: 1100px) {
+      padding-bottom: 8px;
+    }
+  }
+}
+.teamItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 32px 0px;
+  width: 100%;
+  max-width: 830px;
+  @media (max-width: 950px) {
+    padding: 0 32px;
+  }
+  @media (max-width: 600px) {
+    flex-direction: column;
+    padding: 0 16px;
+  }
+  span {
+    color: #8e8e8e;
+    font-size: 1.2rem;
+    max-width: 580px;
+    padding: 0 64px;
+    @media (max-width: 950px) {
+      padding: 0;
+      padding-left: 32px;
+    }
+    @media (max-width: 600px) {
+      padding: 0;
+      padding-top: 32px;
+    }
+  }
+  img {
+    @media (max-width: 270px) {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+.teamItem:nth-child(2n + 1) {
+  flex-direction: row-reverse;
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+  span {
+    @media (max-width: 950px) {
+      padding: 0;
+      padding-right: 32px;
+      padding-left: 16px;
+    }
+    @media (max-width: 600px) {
+      padding: 0;
+      padding-top: 32px;
+    }
+  }
+}
+//=====================TRUST====================
+.trust {
+  width: 100%;
+  margin-bottom: 84px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 84px !important;
+  @media (max-width: 1100px) {
+    margin-top: 32px !important;
+  }
+  @media (max-width: 600px) {
+    margin-top: 24px !important;
+  }
+  .sectionTitle {
+    padding-bottom: 32px;
+    @media (max-width: 650px) {
+      padding-bottom: 16px;
+    }
+  }
+  .imgRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 16px;
+    @media (max-width: 650px) {
+      padding: 0 8px;
+    }
+  }
+  .swiperTrust {
+    width: 100%;
+    .sliderSlide {
+      width: 300px !important;
+      height: 220px !important;
+      margin: 20px 40px;
+      cursor: grab;
+      @media (max-width: 650px) {
+        width: 270px !important;
+        height: 200px !important;
+      }
+      @media (max-width: 400px) {
+        width: 200px !important;
+        height: 150px !important;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+.bottomGreen {
+  width: 100%;
+  background-color: var(--green-text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 32px;
+  @media (max-width: 500px) {
+    padding: 52px 28px;
+  }
+  @media (max-width: 400px) {
+    padding: 48px 16px;
+  }
+  .sectionTitle {
+    color: white;
+    width: 100%;
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+  }
+  .buttonRow {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 16px;
+    button {
+      height: 52px;
+      width: 210px;
+      font-size: 1.2rem;
+      margin: 8px 16px;
+    }
+  }
+}

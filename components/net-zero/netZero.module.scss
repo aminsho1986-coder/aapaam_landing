@@ -1,0 +1,354 @@
+//====================HEADER====================
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  .sectionTitle {
+    padding: 0 16px;
+    margin-bottom: 16px;
+  }
+  .sectionDescription {
+    font-size: 1.8rem;
+    padding: 0 16px 52px 16px;
+    @media (max-width: 800px) {
+      font-size: 1.5rem;
+      padding: 0 16px 22px 16px;
+    }
+    @media (max-width: 500px) {
+      font-size: 1.2rem;
+    }
+  }
+  .videoContainer {
+    width: 100%;
+    max-width: 1100px;
+    aspect-ratio: 516 / 250;
+    .iframe {
+      width: 100%;
+      height: 100%;
+      iframe {
+        width: 100% !important;
+        height: 100% !important;
+      }
+    }
+    @media (max-width: 1200px) {
+      width: 100%;
+      padding: 0 22px;
+    }
+    @media (max-width: 800px) {
+      width: 100%;
+      padding: 0 16px;
+    }
+    @media (max-width: 450px) {
+      width: 100%;
+      padding: 0 8px;
+    }
+  }
+  button {
+    width: 280px;
+    height: 60px;
+    margin-top: 52px;
+    font-size: 1.5rem;
+    @media (max-width: 800px) {
+      width: 320px;
+      height: 62px;
+      margin-top: 36px;
+      font-size: 1.5rem;
+    }
+    @media (max-width: 450px) {
+      width: 260px;
+      height: 52px;
+      margin-top: 22px;
+      font-size: 1.3rem;
+    }
+  }
+}
+//====================QUESTIONS=====================
+.questions {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.questionItem {
+  width: 100%;
+  max-width: 1200px;
+  margin: 50px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: 1250px) {
+    max-width: 1010px;
+  }
+  @media (max-width: 1050px) {
+    flex-direction: column-reverse !important;
+  }
+  .textContainer {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+    @media (max-width: 1050px) {
+      width: 100%;
+      padding: 0 8px !important;
+      max-width: 480px;
+      align-items: center;
+    }
+    .sectionBlueTitle {
+      text-align: start;
+      padding-bottom: 48px;
+      @media (max-width: 1250px) {
+        padding-bottom: 28px;
+      }
+      @media (max-width: 1050px) {
+        text-align: center;
+        font-size: 1.5rem;
+        padding-top: 22px;
+        padding-bottom: 18px;
+      }
+      @media (max-width: 400px) {
+        font-size: 1.2rem;
+      }
+    }
+    .description {
+      color: var(--gray-500);
+      font-size: 1.1rem;
+      @media (max-width: 1050px) {
+        text-align: center;
+        font-size: 1rem;
+      }
+      @media (max-width: 400px) {
+        font-size: 0.9rem;
+      }
+    }
+  }
+  .imgContainer {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all 0.4s;
+    overflow: hidden;
+    @media (max-width: 1050px) {
+      width: 100%;
+      padding: 0 8px !important;
+      max-width: 480px;
+    }
+    .mainImg {
+      width: 100%;
+      height: 100%;
+      border-radius: 2px;
+    }
+    .centerImg {
+      position: absolute;
+      bottom: -80px;
+      left: 50%;
+      transform: translate(-50%, +50%);
+      transition: all 0.4s;
+    }
+  }
+  .imgContainer:hover {
+    transform: scale(1.1);
+    .centerImg {
+      bottom: 50%;
+    }
+  }
+  .buttonContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+    button {
+      width: 250px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      span {
+        color: #373737;
+        font-size: 1.2rem;
+        margin-left: 8px;
+        padding-right: 18px;
+      }
+      img {
+        margin-right: 8px;
+      }
+    }
+  }
+}
+.questionItem:nth-child(2n + 1) {
+  .textContainer {
+    margin-right: 16px;
+    padding: 0 64px 0 32px;
+    @media (max-width: 1250px) {
+      margin-right: 8px;
+      padding: 0 16px 0 8px;
+    }
+    @media (max-width: 1050px) {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .imgContainer {
+    margin-left: 16px;
+    @media (max-width: 1250px) {
+      margin-left: 8px;
+    }
+    @media (max-width: 1050px) {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+.questionItem:nth-child(2n) {
+  flex-direction: row-reverse;
+  .textContainer {
+    margin-left: 16px;
+    padding: 0 32px 0 64px;
+    @media (max-width: 1250px) {
+      margin-left: 8px;
+      padding: 0 0px 0 28px;
+    }
+    @media (max-width: 1050px) {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .imgContainer {
+    margin-right: 16px;
+    @media (max-width: 1250px) {
+      margin-right: 8px;
+    }
+    @media (max-width: 1050px) {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+//====================PLANS=====================
+.netZeroPlans {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 22px 0px 80px 0px;
+  background-image: linear-gradient(to bottom, #8dc63f 0%, #00b2c1 100%);
+  .sectionTitle {
+    color: #fafafa;
+    padding: 42px 16px 0px 16px;
+  }
+  .sectionDescription {
+    color: #095655;
+    padding-bottom: 14px;
+  }
+}
+.plansRow {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 48px;
+}
+.planItem {
+  margin: 16px 8px;
+  padding: 8px 32px 42px 32px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 18px;
+  background-color: #f5f5f5;
+  transition: all 0.4s;
+  height: 500px;
+  position: relative;
+  @media (max-width: 800px) {
+    height: 450px;
+  }
+  @media (max-width: 500px) {
+    margin: 16px 0px;
+    padding: 4px 16px 32px 16px;
+  }
+  .topTexts {
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .title {
+      color: #8b8b8b;
+      font-size: 1.5rem;
+      font-weight: normal;
+    }
+    .value {
+      color: #8b8b8b;
+      font-size: 2.2rem;
+      font-weight: bolder;
+      @media (max-width: 800px) {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  .line {
+    width: 100%;
+    height: 1.5px;
+    background-color: #a9a8a9;
+    margin-bottom: 48px;
+    transition: all 0.4s;
+    @media (max-width: 500px) {
+      margin-bottom: 32px;
+    }
+    
+  }
+ 
+  .benefitItem {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 6px 4px 6px 2px;
+    span {
+      font-size: 1rem;
+      color: var(--gray-500);
+      padding-right: 12px;
+      @media (max-width: 500px) {
+        font-size: 0.85rem;
+      }
+    }
+  }
+  .greenButton {
+    width: 210px;
+    height: 54px;
+    font-size: 1.2rem;
+    border-radius: 27px;
+    margin: 36px 20px 0px 20px;
+    @media (max-width: 700px) {
+      margin: 32px 12px 0px 12px;
+    }
+    @media (max-width: 400px) {
+      margin: 32px 0px 0px 0px;
+    }
+  }
+}
+.planItem:hover {
+  background-color: #dfdfdf;
+  transform: translateY(-32px);
+  .line {
+    height: 1.5px;
+  }
+}
+.firstOffset{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 6px 4px 6px 2px;
+}
+.firstOffset span{
+  font-size: 1rem;
+  color: var(--gray-500) !important;
+  padding-right: 12px !important;
+}
