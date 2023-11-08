@@ -114,13 +114,13 @@ const ProjectsSection = ({ data }) => {
         <div className="row w-100 m-0">
           {items.map((item) => {
             return (
-              <div className="col-md-4 my-5" key={item.title}>
+              <div className="col-md-6 my-5" key={item.title}>
                 <div className={styles.wrapper}>
                   <div className={styles.card}>
                     <Image src={item.images[0]} alt="" width="380" height="460" unoptimized={true} priority />
                     <div className={styles.cardBody}>
                       <div className="row">
-                        <div className="col-6 m-auto col-sm-6">
+                        <div className="col-8 m-auto col-sm-8">
                           <h1>{item.title}</h1>
                           <h3>
                             {item.projectType === "foresting" ? "درختکاری" : 
@@ -128,7 +128,7 @@ const ProjectsSection = ({ data }) => {
                               item.projectType === "energyEfficiency" ? "بهره وری انرژی" : "مدیریت آب"}
                           </h3>
                         </div>
-                        <div className="col-6 m-auto col-sm-6">
+                        <div className="col-4 m-auto col-sm-4 text-center">
                           <p>{item.carbonPrice} <small> تومان/تن </small></p>
                           <p>{item.totalCarbon} <small> تن کربن </small></p>
                         </div>
@@ -152,7 +152,7 @@ const ProjectsSection = ({ data }) => {
                       <p className={styles.des}>{item.description}</p>
                       
                       <Link
-                        href={`/projects/${item._id}`}
+                        href={`/projects/${item.slug}`}
                         className={styles.buttonContainer}
                       >
                         <button > بیشتر بدانید </button>

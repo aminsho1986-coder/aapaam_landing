@@ -5,7 +5,7 @@ import apiList from "@/hooks/fetchData";
 
 const getData = async (projectId) => {
   let data = await serverSideFetching(apiList.getProject, {
-    projectId: projectId,
+    slug: projectId,
   });
   return data;
 };

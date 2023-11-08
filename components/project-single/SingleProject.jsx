@@ -34,6 +34,7 @@ export default function SingleProject({ serverStatus, serverData }) {
       router.push("/projects");
     }
   }, []);
+  
   return (
     <>
       <Nav />
@@ -48,6 +49,7 @@ export default function SingleProject({ serverStatus, serverData }) {
               height={440}
               alt="project pic"
               priority
+              quality={100}
             />
           </div>
         <div className={styles.projectData}>
@@ -106,10 +108,10 @@ export default function SingleProject({ serverStatus, serverData }) {
                 </div>
               </div>
               <div className={styles.bottom}>
+                <span className={styles.subject}> تومان / هر تن </span>
                 <span className={styles.value}>
                   {serverData.carbonPrice.toString()} {" "}
                 </span>
-                <span className={styles.subject}> تومان / هر تن </span>
               </div>
             </div>
           </div>
@@ -117,7 +119,7 @@ export default function SingleProject({ serverStatus, serverData }) {
           <div className="row w-100 text-center" style={{maxWidth:"1050px"}}>
             <div className='col-4 col-xs-4'>
               <div className={styles.benefitItem}>
-                  <b> موقعیت : </b> {" "}
+                  <b className="d-block"> موقعیت : </b> {" "}
                 <span>
                   {serverData.location}
                 </span>
@@ -125,7 +127,7 @@ export default function SingleProject({ serverStatus, serverData }) {
             </div>
             <div className='col-4 col-xs-4'>
               <div className={styles.benefitItem}>
-                <b>دسته بندی : </b>{" "}
+                <b className="d-block">دسته بندی : </b>{" "}
                 <span dir="ltr"> 
                   {serverData.category}
                 </span>
@@ -133,7 +135,7 @@ export default function SingleProject({ serverStatus, serverData }) {
             </div>
             <div className='col-4 col-xs-4'>
               <div className={styles.benefitItem}>
-                <b>استاندارد  : </b>{" "}
+                <b className="d-block">استاندارد  : </b>{" "}
                 <span>
                   {serverData.standard}
                 </span>
