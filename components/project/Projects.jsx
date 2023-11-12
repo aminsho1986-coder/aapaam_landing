@@ -65,8 +65,8 @@ const ProjectsSection = ({ data }) => {
     <section className={`${styles.projects} body-container`}>
         <div className="row my-5 w-100 d-flex justify-content-center">
           <div className="col-md-3" style={{width:"auto"}}>
-            <div className={styles.type} onClick={() => cat === "foresting" ? setcat("all") : setcat("foresting")} >
-              <div className={cat === "foresting" ? `${styles.projectTypeItem} ${styles.active}` : styles.projectTypeItem} >
+            <div className={styles.type} onClick={() => cat === "afforestation" ? setcat("all") : setcat("afforestation")} >
+              <div className={cat === "afforestation" ? `${styles.projectTypeItem} ${styles.active}` : styles.projectTypeItem} >
                 <div className={styles.imgContainer}>
                   <Image src={"/images/projects/project-type1.svg"} width="50" height="50" />
                 </div>
@@ -123,7 +123,7 @@ const ProjectsSection = ({ data }) => {
                         <div className="col-8 m-auto col-sm-8">
                           <h1>{item.title}</h1>
                           <h3>
-                            {item.projectType === "foresting" ? "درختکاری" : 
+                            {item.projectType === "afforestation" ? "جنگل‌کاری" : 
                               item.projectType === "cleanEnergy" ? "انرژی های پاک" :
                               item.projectType === "energyEfficiency" ? "بهره وری انرژی" : "مدیریت آب"}
                           </h3>
@@ -139,7 +139,7 @@ const ProjectsSection = ({ data }) => {
                         <div className="col-6 m-auto col-sm-6">
                           <h1>{item.title}</h1>
                           <h3>
-                            {item.projectType === "foresting" ? "درختکاری" : 
+                            {item.projectType === "afforestation" ? "جنگل‌کاری" : 
                               item.projectType === "cleanEnergy" ? "انرژی های پاک" :
                               item.projectType === "energyEfficiency" ? "بهره وری انرژی" : "مدیریت آب"}
                           </h3>

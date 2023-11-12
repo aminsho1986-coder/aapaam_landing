@@ -81,6 +81,7 @@
       font-size: 0.95rem;
       max-width: 1050px;
       color: var(--gray-300);
+      line-height: 28px;
       @media (max-width: 400px) {
         font-size: 0.75rem;
         margin-top: 12px;
@@ -169,6 +170,7 @@
           color: var(--green-600);
           font-size: 0.80rem;
           padding-left: 12px;
+          direction: rtl;
           @media (max-width: 400px) {
             font-size: 0.75rem;
           }

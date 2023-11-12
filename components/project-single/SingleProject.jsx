@@ -67,7 +67,7 @@ export default function SingleProject({ serverStatus, serverData }) {
                   </div>
                   <span>
                       {
-                        serverData.projectType === "foresting" ? "درختکاری" : 
+                        serverData.projectType === "afforestation" ? "جنگل‌کاری" : 
                         serverData.projectType === "cleanEnergy" ? "انرژی تجدید پذیر" :
                         serverData.projectType === "energyEfficiency" ? "بهره وری انرژی" : "مدیریت آب"
                       }
@@ -128,7 +128,7 @@ export default function SingleProject({ serverStatus, serverData }) {
             <div className='col-4 col-xs-4'>
               <div className={styles.benefitItem}>
                 <b className="d-block">دسته بندی : </b>{" "}
-                <span dir="ltr"> 
+                <span dir="rtl"> 
                   {serverData.category}
                 </span>
               </div>
