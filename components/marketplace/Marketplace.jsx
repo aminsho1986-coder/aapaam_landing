@@ -115,7 +115,7 @@ const MarketplaceRoundImages = () => {
             height="300"
           />
           <span className={styles.description}>
-          سفر کربن صفر
+          سفر نت زیرو
           </span>
           <span className={styles.description}>
           ترسیم مسیر در راه دستیابی به کربن خنثی

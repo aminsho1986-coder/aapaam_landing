@@ -11,7 +11,7 @@ const getData = async () => {
 };
 
 export const metadata = {
-  title: "آپام | کربن صفر",
+  title: "آپام | نت زیرو",
 }
 
 const NetZeroPage = async () => {

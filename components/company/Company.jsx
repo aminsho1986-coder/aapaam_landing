@@ -191,7 +191,7 @@ const CompanyHeader = ({ onBuyPlanClick }) => {
         </button>
         <span className={`${styles.sectionTitle} section-title`} style={{color:"#535353"}}>or</span>
         <Link href="/net-zero">
-          <button className="green-button"> پیوستن به سفر کربن صفر </button>
+          <button className="green-button"> پیوستن به سفر نت زیرو </button>
         </Link>
       </div>
     </header>
@@ -291,9 +291,9 @@ const CompanyJourney = () => {
   return (
     <section className={`${styles.journey} body-container`}>
       <div className={styles.journeyImg}>
-        <span> با پیوستن به سفر کربن صفر چه چیزی تغییر می‌کند؟ </span>
+        <span> با پیوستن به سفر نت زیرو چه چیزی تغییر می‌کند؟ </span>
         <span>
-        با پیوستن به سفر کربن صفر، شما با یک تلاش جهانی در راه مقابله با تغییرات اقلیمی و ایجاد آینده پایدار همراه می‌شوید.
+        با پیوستن به سفر نت زیرو، شما با یک تلاش جهانی در راه مقابله با تغییرات اقلیمی و ایجاد آینده پایدار همراه می‌شوید.
         </span>
         <div className={styles.buttonRow}>
           <Link href="/net-zero">

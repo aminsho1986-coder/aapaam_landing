@@ -80,7 +80,7 @@ export default function Footer() {
                 <span className="footer-text"> رویداد ها </span>
               </Link>
               <Link href="/net-zero">
-                <span className="footer-text"> کربن صفر </span>
+                <span className="footer-text"> نت زیرو </span>
               </Link>
             </div>
           </div>

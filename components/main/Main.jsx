@@ -68,7 +68,7 @@ export default function Main({ serverStatus, serverData }) {
         imgWidth: 90,
         imgHeight: 90,
         firstString: "سفر",
-        secondString: "کربن صفر",
+        secondString: "نت زیرو",
         onClick: function () {
           router.push(`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/`);
         },
@@ -883,9 +883,9 @@ const JourneySection = () => {
           width="240"
           height="260"
         />
-        <span> قدم چهارم، شروع مسیر کربن صفر (Net-Zero) </span>
+        <span> قدم چهارم، شروع مسیر نت زیرو (Net-Zero) </span>
         <span>
-        کربن صفر یک سرویس مداوم است که برای مشاغل طراحی شده است تا ردپای کربن خود را در یک برنامه سالانه کاهش دهند. با پیوستن به این جنبش جهانی، شرکت ها به هدف 1.5 درجه سانتی گراد توافق پاریس کمک خواهند کرد.
+        نت زیرو یک سرویس مداوم است که برای مشاغل طراحی شده است تا ردپای کربن خود را در یک برنامه سالانه کاهش دهند. با پیوستن به این جنبش جهانی، شرکت ها به هدف 1.5 درجه سانتی گراد توافق پاریس کمک خواهند کرد.
         </span>
         <div className="buttonRow">
           <Link href="/net-zero">
