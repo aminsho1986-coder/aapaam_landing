@@ -7,7 +7,7 @@ import "./bottomGray.scss";
 export default function BottomGray() {
   return (
     <section className="bottom-gray body-container">
-      <span className="section-blue-title"> سبز باش </span>
+      <span className="section-blue-title"> !سبز شو </span>
       <span className="section-description"> اگر می‌خواهید ردپای خود را جبران کنید، همین حالا شروع کنید </span>
       <div className="button-row">
         <Link href={`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/`}>

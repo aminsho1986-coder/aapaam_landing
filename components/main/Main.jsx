@@ -942,8 +942,8 @@ const MarketSection = () => {
         <Image
           src="/images/main/market-img.png"
           alt=""
-          width="520"
-          height="380"
+          width="410"
+          height="320"
         />
       </div>
       <div className="market-right">

@@ -125,7 +125,7 @@ export default function About() {
         {/* <Companies /> */}
       {/* ====================END COMPANIES SECTION========================== */}
       {/* ====================START TRUST SECTION========================== */}
-      <section className={`${styles.trust} trust body-container`}>
+      {/* <section className={`${styles.trust} trust body-container`}>
         <span className={`${styles.sectionTitle} section-title`}>
         قراردادها و همکاری‌ها
         </span>
@@ -153,7 +153,7 @@ export default function About() {
             })}
           </Swiper>
         </div>
-      </section>
+      </section> */}
       {/* ====================END TRUST SECTION========================== */}
       <Help />
       {/* ====================START END OF PAGE SECTION========================== */}

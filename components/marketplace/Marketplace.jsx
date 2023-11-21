@@ -82,12 +82,12 @@ const MarketplaceHeader = ({ onGetApiClick, onGetCodeClick }) => {
       <span className={`${styles.sectionTitle} section-title`}>
       آیا شما یک بازار، کسب و کار دیجیتال یا پلتفرم حمل و نقل دیجیتال هستید؟  
       </span>
-      <Image
+      {/* <Image
         src="/images/individual/header.png"
         alt=""
         width="1080"
         height="495"
-      />
+      /> */}
       <div className={styles.buttonContainer}>
         <button className="blue-light-button" onClick={onGetApiClick}>
           از API استفاده کنید
@@ -111,8 +111,8 @@ const MarketplaceRoundImages = () => {
           <Image
             src="/images/marketplace/item1.png"
             alt=""
-            width="300"
-            height="300"
+            width="250"
+            height="250"
           />
           <span className={styles.description}>
           سفر نت زیرو
@@ -125,8 +125,8 @@ const MarketplaceRoundImages = () => {
           <Image
             src="/images/marketplace/item2.png"
             alt=""
-            width="300"
-            height="300"
+            width="250"
+            height="250"
           />
           <span className={styles.description}>
           ارزیابی کربن
@@ -139,8 +139,8 @@ const MarketplaceRoundImages = () => {
           <Image
             src="/images/marketplace/item3.png"
             alt=""
-            width="300"
-            height="300"
+            width="250"
+            height="250"
           />
           <span className={styles.description}> 
           پروژه‌های جبران کربن 
