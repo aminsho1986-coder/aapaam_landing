@@ -44,7 +44,7 @@ export default function Company({ serverStatus, serverData }) {
       id: "3",
       title: "برنامه های ما",
       description:
-        "با خرید هر یک از طرح‌های ارزیابی کربن، می‌توانید از انتشار کربن خود در اتمسفر مطلع شوید و در کاهش و جبران این تأثیر به ما بپیوندید. از شما دعوت می کنیم در تلاش برای کاهش و جبران اثرات انتشار کربن بر آب و هوای زمین به ما بپیوندید.",
+        "با خرید هر یک از طرح‌های ارزیابی کربن، می‌توانید از انتشار کربن خود در اتممسیر مطلع شوید و در کاهش و جبران این تأثیر به ما بپیوندید. از شما دعوت می کنیم در تلاش برای کاهش و جبران اثرات انتشار کربن بر آب و هوای زمین به ما بپیوندید.",
       mainImg: "/images/company/question-img1.webp",
     },
   ]);
@@ -191,7 +191,7 @@ const CompanyHeader = ({ onBuyPlanClick }) => {
         </button>
         <span className={`${styles.sectionTitle} section-title`} style={{color:"#535353"}}>or</span>
         <Link href="/net-zero">
-          <button className="green-button"> پیوستن به سفر نت زیرو </button>
+          <button className="green-button"> پیوستن به مسیر نت زیرو </button>
         </Link>
       </div>
     </header>
@@ -291,9 +291,9 @@ const CompanyJourney = () => {
   return (
     <section className={`${styles.journey} body-container`}>
       <div className={styles.journeyImg}>
-        <span> با پیوستن به سفر نت زیرو چه چیزی تغییر می‌کند؟ </span>
+        <span> با پیوستن به مسیر نت زیرو چه چیزی تغییر می‌کند؟ </span>
         <span>
-        با پیوستن به سفر نت زیرو، شما با یک تلاش جهانی در راه مقابله با تغییرات اقلیمی و ایجاد آینده پایدار همراه می‌شوید.
+        با پیوستن به مسیر نت زیرو، شما با یک تلاش جهانی در راه مقابله با تغییرات اقلیمی و ایجاد آینده پایدار همراه می‌شوید.
         </span>
         <div className={styles.buttonRow}>
           <Link href="/net-zero">

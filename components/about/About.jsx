@@ -159,7 +159,7 @@ export default function About() {
       {/* ====================START END OF PAGE SECTION========================== */}
       <section className={`${styles.bottomGreen} body-container`}>
         <span className={`${styles.sectionTitle} section-title`}>
-        اکنون برای محافظت از سرزمین خود اقدام کنید <br></br> به جامعه ی جبران کننده های کربن بپیوندید
+        اکنون برای محافظت از زمین، می‌توانید به جامعه جبران‌کنندگان کربن بپیوندید!
         </span>
         <div className={styles.buttonRow}>
           <Link href="/individual">
@@ -174,7 +174,7 @@ export default function About() {
           </Link>
           <Link href="/event">
             <button className="white-button-light-blue-text">
-              برای مناسبت ها
+              برای رویداد ها
             </button>
           </Link>
         </div>

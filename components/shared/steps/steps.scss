@@ -97,9 +97,62 @@
       display: none;
     }
     .blue-square {
-      width: 10px;
-      height: 10px;
+      width: 12px;
+      height: 12px;
       background-color: var(--blue-text-color);
+    }
+  }
+  .square-row2 {
+    width: 750px;
+    height: 2px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    transform: rotate(270deg);
+    @media (max-width: 1000px) {
+      width: 600px;
+    }
+    @media (max-width: 800px) {
+      display: none;
+    }
+    .blue-triangle  {
+      width: 0;
+      height: 0;
+      border-top: 10px solid transparent;
+      border-left: 20px solid var(--blue-400);
+      border-bottom: 10px solid transparent;
+    }
+    span {
+      display: block;
+      width: 1.5vw;
+      height: 1.5vw;
+      border-bottom: 5px solid var(--blue-400);
+      border-right: 5px solid var(--blue-400);
+      transform: rotate(45deg);
+      margin: -10px;
+      animation: animate 3s infinite;
+    }
+    span:nth-child(2) {
+        animation-delay: -0.2s;
+    }
+    
+    span:nth-child(3) {
+        animation-delay: -0.4s;
+    }
+    @keyframes animate {
+        0% {
+            opacity: 0;
+            transform: rotate(45deg) translate(-200px, -200px);
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            transform: rotate(45deg) translate(200px, 200px);
+        }
     }
   }
 }

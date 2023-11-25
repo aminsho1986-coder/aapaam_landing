@@ -67,7 +67,7 @@ export default function Main({ serverStatus, serverData }) {
         img: "/images/main/step4.svg",
         imgWidth: 90,
         imgHeight: 90,
-        firstString: "سفر",
+        firstString: "مسیر",
         secondString: "نت زیرو",
         onClick: function () {
           router.push(`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/`);
@@ -77,7 +77,7 @@ export default function Main({ serverStatus, serverData }) {
   });
   const [FAQData] = useState([
     {
-      title: "آپام چیست؟",
+      title: "معرفی پلتفرم آپام",
       description:
         "آپام یک پلتفرم نرم‌افزار به‌عنوان سرویس (SaaS) است، که به کسب‌وکارها و افراد این امکان را می‌دهد تا ردپای کربن خود را ارزیابی و جبران کنند و اقدامات موثری در راه مقابله با تغییرات آب و هوایی انجام دهند.",
       height: 0,
@@ -885,7 +885,7 @@ const JourneySection = () => {
         />
         <span> قدم چهارم، شروع مسیر نت زیرو (Net-Zero) </span>
         <span>
-        نت زیرو یک سرویس مداوم است که برای مشاغل طراحی شده است تا ردپای کربن خود را در یک برنامه سالانه کاهش دهند. با پیوستن به این جنبش جهانی، شرکت ها به هدف 1.5 درجه سانتی گراد توافق پاریس کمک خواهند کرد.
+        نت‌زیرو یک سرویس مداوم شخصی‌سازی شده برای کسب و کارها می‌باشد؛ تا کسب و کارها در قالب برنامه‌های سالانه ردپای کربن خود را کاهش دهند. با پیوستن به این جنبش جهانی، کسب و کارها برای رسیدن به هدف 1.5 درجه سانتی گراد توافق پاریس کمک خواهند کرد
         </span>
         <div className="buttonRow">
           <Link href="/net-zero">
@@ -925,7 +925,7 @@ const SellsSection = () => {
       <div className="forest-right">
         <span className="section-title"> درآخر، اعتبار خودرا مبادله کنید </span>
         <span className="section-description">
-          در بازار کربن آپام اعتبار آزاد کربن خودرا بفروشید و بخرید
+        در بازار کربن آپام، می‌توانید اعتبار آزاد کربن خود را خرید و فروش کنید.
         </span>
         <Link href={`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/`} >
           <button className="blue-light-button"> شروع کن! </button>
@@ -948,7 +948,7 @@ const MarketSection = () => {
       </div>
       <div className="market-right">
         <span className="section-title"> امکانات </span>
-        <span> از طریق گرفتن API، کد HTML و QR CODE به راحتی از سرویس ما استفاده کنید </span>
+        <span> شما می‌توانید با استفاده از کلید API، کد HTML و کد QR به راحتی از سرویس ما بهره‌مند شوید. </span>
         <Link href="resources">
           <button className="white-button-light-blue-text"> بیشتر بدانید </button>
         </Link>
@@ -1071,7 +1071,7 @@ const EndPageSection = () => {
   return (
     <section className="bottom-green body-container">
         <span className="sectionTitle section-title">
-          اکنون برای محافظت از سرزمین خود اقدام کنید <br></br> به جامعه ی جبران کننده های کربن بپیوندید
+        اکنون برای محافظت از زمین، می‌توانید به جامعه جبران‌کنندگان کربن بپیوندید!
         </span>
         <div className='buttonRow'>
           <Link href="/individual">
@@ -1086,7 +1086,7 @@ const EndPageSection = () => {
           </Link>
           <Link href="/event">
             <button className="white-button-light-blue-text">
-              برای مناسبت ها
+              برای رویداد ها
             </button>
           </Link>
         </div>

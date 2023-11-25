@@ -21,7 +21,7 @@ export default function Projects({ serverStatus, serverData }) {
       <ProjectsSection data={serverData} />
       {/* <!-- ========================END PROJECTS SECTION===================== --> */}
       {/* <!-- ========================START NEWS SECTION===================== --> */}
-      <News />
+        {/* <News /> */}
       {/* <!-- ========================END NEWS SECTION===================== --> */}
       <Footer />
     </>

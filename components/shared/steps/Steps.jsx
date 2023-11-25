@@ -52,6 +52,14 @@ export default function Steps({ data }) {
           <div className="blue-square"></div>
           <div className="blue-square"></div>
         </div>
+        <div className="square-row2">
+          {/* <div className="blue-triangle"></div>
+          <div className="blue-triangle"></div>
+          <div className="blue-triangle"></div> */}
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </section>
   );

@@ -68,11 +68,11 @@ export default function Event() {
       {/* <!-- =====================END HEADER====================== --> */}
       {/* <!-- =====================START OFFSET SECTION====================== --> */}
       {useMemo(() => {
-        return <Offset data={offsetData} title={"آیا می‌دانید، از طریق آپام می‌توانید خیلی سریع کربن خود را جبران کنید؟"}/>;
+        return <Offset data={offsetData} title={"آیا می‌دانید، از طریق پلتفرم آپام می‌توانید خیلی سریع ردپای کربن خود را جبران کنید؟"}/>;
       }, [offsetData])}
       {/* <!-- =====================END OFFSET SECTION====================== --> */}
       {/* <!-- =====================START EMIT SECTION====================== --> */}
-      <Emit title={"آیا می‌دانید، یک رویداد با 20 نفر شرکت‌کننده چه میزان کربن منتشر می‌کند؟"}/>
+      <Emit title={"کربن رویدادهای خود را با آپام جبران کنید!"}/>
       {/* <!-- =====================END EMIT SECTION====================== --> */}
       {/* <!-- =====================START LIFE STYLE SECTION====================== --> */}
       <LifeStyle data={lifeStyleData} />
@@ -91,10 +91,10 @@ const EventHeader = () => {
   return (
     <header className={`${styles.header} body-container`}>
       <span className={`${styles.sectionTitle} section-title`}>
-      رویدادی با 20 نفر؛ 5 تن کربن
+      آیا می‌دانید، یک رویداد با 20 نفر شرکت‌کننده چه میزان کربن منتشر می‌کند؟
       </span>
       <span className={`${styles.sectionDescription} section-description`}>
-      کربن رویدادهای خود را با آپام جبران کنید
+      انتشار رویدادی با ظرفیت 20 نفر، معادل 5 تن کربن می‌باشد
       </span>
       <Image
         src="/images/event/header-event.png"

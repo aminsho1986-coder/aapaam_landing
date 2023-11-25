@@ -19,7 +19,7 @@ export default function NetZero({ serverStatus, serverData }) {
 
   const router = useRouter();
   const [stepsData] = useState({
-    title: "مراحل سالانه سفر نت زیرو",
+    title: "مراحل سالانه مسیر نت زیرو",
     subtitle: "",
     stepsData: [
       {
@@ -70,9 +70,9 @@ export default function NetZero({ serverStatus, serverData }) {
   });
   const [questionData] = useState([
     {
-      title: "بسته سفر نت زیرو 2030 و 2050 چیست؟",
+      title: "بسته مسیر نت زیرو 2030 و 2050 چیست؟",
       description:
-        "سفر نت زیرو 2030 نقشه‌راهی است برای کاهش تدریجی انتشار گازهای گلخانه‌ای همراه با گزارش خوداظهاری در راستای شفافیت در این مسیر؛ و سفر نت زیرو 2050 با هدف بلند مدت کربن خنثی کامل در این سه دهه پیش‌روی می‌باشد.",
+        "مسیر نت زیرو 2030 نقشه‌راهی است برای کاهش تدریجی انتشار گازهای گلخانه‌ای همراه با گزارش خوداظهاری در راستای شفافیت در این مسیر؛ و مسیر نت زیرو 2050 با هدف بلند مدت کربن خنثی کامل در این سه دهه پیش‌روی می‌باشد.",
       mainImg: "/images/company/question-img1.webp",
     },
     {
@@ -151,7 +151,7 @@ const NetZeroHeader = ({ onGoToPlansClick }) => {
   return (
     <header className={`${styles.header} body-container`}>
       <span className={`${styles.sectionTitle} section-title`}>
-      سفر نت زیرو چیست؟
+      مسیر نت زیرو چیست؟
       </span>
       <span className={`${styles.sectionDescription} section-description`}>
       می توانید میزان انتشار کربن خود را با آپام محاسبه و جبران کنید
@@ -167,7 +167,7 @@ const NetZeroHeader = ({ onGoToPlansClick }) => {
       </div>
       <div onClick={onGoToPlansClick}>
         <button className={`${styles.greenButton} green-button`}>
-          شروع سفر
+          شروع مسیر
         </button>
       </div>
     </header>
@@ -226,7 +226,7 @@ const NetZeroPlans = ({ data, onFirstLoad, isFirstLoad }) => {
         تا سال 2030
       </span>
       <span className={`${styles.sectionDescription} section-description`}>
-      برنامه‌های سفر نت زیرو 
+      برنامه‌های مسیر نت زیرو 
       </span>
       <div className="container-fluid">
         <div className="row">
@@ -284,7 +284,7 @@ const NetZeroPlans = ({ data, onFirstLoad, isFirstLoad }) => {
           تا سال 2050 
       </span>
       <span className={`${styles.sectionDescription} section-description`}>
-      برنامه‌های سفر نت زیرو 
+      برنامه‌های مسیر نت زیرو 
       </span>
       <div className="container-fluid">
         <div className="row">

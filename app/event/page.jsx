@@ -1,7 +1,7 @@
 import Event from "@/components/event/Event";
 
 export const metadata = {
-  title: "آپام | مناسبت ها",
+  title: "آپام | رویداد ها",
 }
 
 export default function EventPage() {
