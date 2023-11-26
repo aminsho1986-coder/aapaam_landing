@@ -122,7 +122,7 @@ export default function About() {
         {/* <AboutTeam teamData={teamData} /> */}
       {/* ====================END TEAM SECTION==========================  */}
       {/*  ====================START COMPANIES SECTION========================== */}
-        {/* <Companies /> */}
+      <Companies />
       {/* ====================END COMPANIES SECTION========================== */}
       {/* ====================START TRUST SECTION========================== */}
       {/* <section className={`${styles.trust} trust body-container`}>

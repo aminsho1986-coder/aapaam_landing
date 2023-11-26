@@ -117,9 +117,6 @@ export default function NetZero({ serverStatus, serverData }) {
       {/* <!-- ==========================START QUESTION SECTION===================== --> */}
       <NetZeroQuestions data={questionData} />
       {/* <!-- ==========================END QUESTION SECTION===================== --> */}
-      {/* <!-- ==========================START COMPANIES SECTION===================== --> */}
-        {/* <Companies /> */}
-      {/* <!-- ==========================END COMPANIES SECTION===================== --> */}
       {/* <!-- ==========================START PLAN SECTION===================== --> */}
       <NetZeroPlans
         data={serverData}

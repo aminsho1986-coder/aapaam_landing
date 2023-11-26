@@ -184,39 +184,35 @@ export default function Main({ serverStatus, serverData }) {
       {/* <!-- =====================START FOREST SECTION========================== --> */}
       <ForestSection />
       {/* <!-- =====================END FOREST SECTION========================== --> */}
-
       {/* <!-- =====================START COMPANIES SECTION========================== --> */}
-        {/* <Companies /> */}
+      <Companies />
       {/* <!-- =====================END COMPANIES SECTION========================== --> */}
+      {/* <!-- =====================START WORKS SECTION========================== --> */}
+      <WorkSection />
+      {/* <!-- =====================END WORKS SECTION========================== --> */}
+      {/* <!-- =====================START JOURNEY SECTION========================== --> */}
+      <JourneySection />
+      {/* <!-- =====================END JOURNEY SECTION========================== --> */}
+      {/* <!-- =====================START SELLS SECTION========================== --> */}
+      <SellsSection />
+      {/* <!-- =====================END SELLS SECTION========================== --> */}
+      
       {/* <!-- =====================START MARKET SECTION========================== --> */}
       <MarketSection />
       {/* <!-- =====================END MARKET SECTION========================== --> */}
 
-      {/* <!-- =====================START WORKS SECTION========================== --> */}
-      <WorkSection />
-      {/* <!-- =====================END WORKS SECTION========================== --> */}
-
-      {/* <!-- =====================START JOURNEY SECTION========================== --> */}
-      <JourneySection />
-      {/* <!-- =====================END JOURNEY SECTION========================== --> */}
-
-      {/* <!-- =====================START SELLS SECTION========================== --> */}
-      <SellsSection />
-      {/* <!-- =====================END SELLS SECTION========================== --> */}
-
+      {/* <!-- =====================START FAQS SECTION========================== --> */}
       <FAQSection
         data={FAQData}
         isFirstLoad={isFirstLoad}
         onFirstLoadFAQs={onFirstLoadFAQs}
         onFAQClick={onFAQClick}
       />
+      {/* <!-- =====================END FAQS SECTION========================== --> */}
 
       {/* <!-- =====================START NEWS SECTION========================== --> */}
         {/* <News /> */}
       {/* <!-- =====================END NEWS SECTION========================== --> */}
-
-      {/* <!-- =====================START FAQS SECTION========================== --> */}
-      {/* <!-- =====================END FAQS SECTION========================== --> */}
 
       {/* <!-- =====================START QUESTION SECTION========================== --> */}
       <Help />
@@ -542,7 +538,7 @@ const CounterSection = ({ trees, co2 }) => {
         <div className="counter-container">
           <div className="counter-inside">
             <div className="text-container">
-              <div className="title">معادل</div>
+              <div className="title">تعداد</div>
               <div className="description">درخت</div>
             </div>
             <div className="counter-item-row">
@@ -745,7 +741,7 @@ const CounterSection = ({ trees, co2 }) => {
             </div>
           </div>
         </div>
-        <span className="bottom-header-span"> از طریق کاشت درخت </span>
+        <span className="bottom-header-span"> معادل است با کاشتن </span>
       </div>
     </section>
   );
