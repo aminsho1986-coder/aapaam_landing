@@ -10,7 +10,7 @@ import Link from "next/link";
 import Footer from "../shared/footer/Footer";
 import { useEffect, useState } from "react";
 
-export default function Projects({ serverStatus, serverData }) {
+export default function Projects({ serverData }) {
   return (
     <>
       <Nav />
@@ -111,7 +111,7 @@ const ProjectsSection = ({ data }) => {
         </div>
 
       <div className="container">
-        <div className="row w-100 m-0">
+        <div className="row w-100 mb-5">
           {items.map((item) => {
             return (
               <div className="col-md-6 my-5" key={item.title}>
@@ -120,7 +120,7 @@ const ProjectsSection = ({ data }) => {
                     <Image src={item.images[0]} alt="" width="380" height="460" unoptimized={true} priority />
                     <div className={styles.cardBody}>
                       <div className="row">
-                        <div className="col-8 m-auto col-sm-8">
+                        <div className="col-7 m-auto col-sm-7">
                           <h1>{item.title}</h1>
                           <h3>
                             {item.projectType === "afforestation" ? "جنگل‌کاری" : 
@@ -128,7 +128,7 @@ const ProjectsSection = ({ data }) => {
                               item.projectType === "energyEfficiency" ? "بهره وری انرژی" : "مدیریت آب"}
                           </h3>
                         </div>
-                        <div className="col-4 m-auto col-sm-4 text-center">
+                        <div className="col-5 m-auto col-sm-5 text-center">
                           <p>{item.carbonPrice} <small> تومان/تن </small></p>
                           <p>{item.totalCarbon} <small> تن کربن </small></p>
                         </div>

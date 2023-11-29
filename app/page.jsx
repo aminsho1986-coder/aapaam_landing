@@ -15,16 +15,22 @@ const getBannersData = async () => {
 };
 
 const Home = async () => {
-  let data = await getData();
-  let status = data.ok;
-  let response = await data.json();
-  let bannersData = await getBannersData();
-  let bannersStatus = data.ok;
-  let bannersResponse = await bannersData.json();
+
+  let response = {};
+  let bannersResponse = {};
+  try {
+
+    let data = await getData();
+    response = await data.json();
+    let bannersData = await getBannersData();
+    bannersResponse = await bannersData.json();
+
+  } catch (err) {
+    console.log(err);
+  }
   return (
     <div>
       <Main
-        serverStatus={status && bannersStatus}
         serverData={{ response, bannersResponse }}
       />
     </div>

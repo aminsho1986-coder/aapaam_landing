@@ -120,7 +120,7 @@
     color: white;
     z-index: 3;
     text-transform: capitalize;
-    width: 100%;
+    // width: 100%;
   }
   .cardBody h3 {
     padding: 5px 0;
@@ -134,11 +134,18 @@
   .cardBody small{
     font-weight: normal;
     font-size: 12px;
+    display: block;
   }
   .card .info h3 {
     padding: 10px 0;
     font-size: 1.4rem;
     color: var(--green-text-color);
+    @media (max-width: 900px) {
+      font-size: 1.2rem;
+    }
+    @media (max-width: 500px) {
+      font-size: 1rem;
+    }
   }
   .card .info p{
     text-align: left;
@@ -148,14 +155,27 @@
   .card .info small{
     font-weight: normal;
     font-size: 12px;
+    display: block;
   }
   .cardBody h1 {
     font-size: 2rem;
     color: var(--light-blue-text-color);
+    @media (max-width: 900px) {
+      font-size: 1.7rem;
+    }
+    @media (max-width: 500px) {
+      font-size: 1.4rem;
+    }
   }
   .card .info h1 {
     font-size: 2rem;
     color: var(--light-blue-text-color);
+    @media (max-width: 900px) {
+      font-size: 1.7rem;
+    }
+    @media (max-width: 500px) {
+      font-size: 1.4rem;
+    }
   }
   .card:after {
     content: "";

@@ -11,16 +11,20 @@ const getData = async () => {
 
 
 const ProjectsPage = async () => {
-  let data = await getData();
-  let status = data.ok;
-  let response = await data.json();
-  response.map((item) => {
+
+  let response = [];
+  try {
+    let data = await getData();
+    response = await data.json();
+  } catch (error) { }
+
+  response ? response.map((item) => {
     return (item.images[0] =
       process.env.NEXT_PUBLIC_BASE_URL_IMAGES + item.images[0]);
-  });
+  }) : [];
   return (
     <div>
-      <Projects serverStatus={status} serverData={response} />
+      <Projects serverData={response} />
     </div>
   );
 };

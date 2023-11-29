@@ -22,7 +22,7 @@ import Footer from "../shared/footer/Footer";
 import Help from "../shared/help/Help";
 
 
-export default function Main({ serverStatus, serverData }) {
+export default function Main({ serverData }) {
   const router = useRouter();
 
   const [stepsData] = useState({
@@ -282,7 +282,7 @@ const HeaderSection = () => {
   );
 };
 
-const CounterSection = ({ trees, co2 }) => {
+const CounterSection = ({ trees=0, co2=0 }) => {
   let numbersToTen = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
   let treesString = "0".repeat(8 - trees.toString().length) + trees.toString();
@@ -795,19 +795,19 @@ const NumbersSection = ({ data }) => {
         height="305"
       />
       <div className="number-item">
-        <span>{stylePrice(data.projects.toString())}</span>
+        <span>{data.projects?stylePrice(data.projects.toString()):0}</span>
         <span>پروژه ها</span>
       </div>
       <div className="number-item">
-        <span>{stylePrice(data.trees.toString())}</span>
+        <span>{data.trees?stylePrice(data.trees.toString()):0}</span>
         <span>درخت کاشته شده</span>
       </div>
       <div className="number-item">
-        <span>{stylePrice(data.partnerships.toString())}</span>
+        <span>{data.partnerships?stylePrice(data.partnerships.toString()):0}</span>
         <span>همکاری ها</span>
       </div>
       <div className="number-item">
-        <span>{stylePrice(data.companies.toString())}</span>
+        <span>{data.companies?stylePrice(data.companies.toString()):0}</span>
         <span>شرکت ها</span>
       </div>
     </section>

@@ -17,7 +17,7 @@ export default async function customFetching(data, query = {}, body = {}) {
   for (const property in query) {
     url += `${property}=${query[property]}`;
   }
+
   let res = await fetch(url, fetchData);
- 
   return res;
 }
