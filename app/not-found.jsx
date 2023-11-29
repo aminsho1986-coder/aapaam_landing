@@ -5,7 +5,6 @@ import Link from "next/link";
 export default function NotFound() {
   return (
     <>
-
       <div id="notfound">
         <div className="notfound">
           <div className="notfound-404">
@@ -19,7 +18,6 @@ export default function NotFound() {
           </Link>
         </div>
       </div>
-
     </>
   );
 }

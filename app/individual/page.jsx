@@ -1,8 +1,6 @@
 import Individual from "@/components/individual/Individual";
 
-export const metadata = {
-  title: "آپام | اشخاص",
-}
+
 
 const IndividualPage = () => {
   return (

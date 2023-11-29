@@ -8,9 +8,7 @@ const getData = async () => {
   return data;
 };
 
-export const metadata = {
-  title: "آپام | پروژه ها",
-}
+
 
 const ProjectsPage = async () => {
   let data = await getData();

@@ -10,9 +10,6 @@ const getData = async () => {
   return data;
 };
 
-export const metadata = {
-  title: "آپام | شرکت ها",
-}
 
 export default async function CompanyPage() {
   let data = await getData();

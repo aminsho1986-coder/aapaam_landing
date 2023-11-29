@@ -10,9 +10,7 @@ const getData = async () => {
   return data;
 };
 
-export const metadata = {
-  title: "آپام | نت زیرو",
-}
+
 
 const NetZeroPage = async () => {
   let data = await getData();

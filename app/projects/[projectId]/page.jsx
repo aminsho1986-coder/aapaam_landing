@@ -10,10 +10,6 @@ const getData = async (projectId) => {
   return data;
 };
 
-export const metadata = {
-  title: "آپام | پروژه",
-}
-
 
 const ProjectPage = async ({ params }) => {
   let data = await getData(params.projectId);

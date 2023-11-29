@@ -3,9 +3,6 @@ import CNamad from "@/components/cNamad/CNamad";
 import serverSideFetching from "@/hooks/ServerFetch";
 import apiList from "@/hooks/fetchData";
 
-export const metadata = {
-  title: "آپام | گواهی",
-}
 
 const getData = async (id) => {
   let data = await serverSideFetching(apiList.symbolInfo, {
