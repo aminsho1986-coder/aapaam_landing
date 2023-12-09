@@ -12,7 +12,7 @@ import Image from "next/image";
 
 export default function Companies() {
   const [companiesData] = useState([
-    { id: 1, img: "/images/shared/company1.png" },
+    // { id: 1, img: "/images/shared/company1.png" },
     { id: 2, img: "/images/shared/company2.png" },
     { id: 3, img: "/images/shared/company3.png" },
     { id: 4, img: "/images/shared/company4.png" },

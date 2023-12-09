@@ -71,7 +71,7 @@ export default function Company({ serverStatus, serverData }) {
         firstString: "محاسبه",
         secondString: "کربن",
         onClick: function () {
-          router.push(`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/`);
+          router.push(`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/calculate/calculator`);
         },
       },
       {
@@ -82,7 +82,7 @@ export default function Company({ serverStatus, serverData }) {
         firstString: "انتخاب",
         secondString: "پروژه",
         onClick: function () {
-          router.push(`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/`);
+          router.push(`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/carbon-project`);
         },
       },
       {
@@ -93,7 +93,7 @@ export default function Company({ serverStatus, serverData }) {
         firstString: "جبران",
         secondString: "کربن",
         onClick: function () {
-          router.push(`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/`);
+          router.push(`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/offset`);
         },
       },
     ],
@@ -269,7 +269,7 @@ const CompanyPlans = ({ serverData, onFirstLoad, isFirstLoad }) => {
                   );
                 })}
                 <div style={{position:"absolute" , bottom:"30px"}}>
-                  <Link href={`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/`}>
+                  <Link href={`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/calculate/calculator`}>
                     <button
                       className={`${styles.blueLightButton} blue-light-button`}
                       >

@@ -41,7 +41,7 @@ export default function NetZero({ serverStatus, serverData }) {
         firstString: "محاسبه",
         secondString: "رد پای سالانه",
         onClick: function () {
-          router.push(`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/`);
+          router.push(`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/calculate/calculator`);
         },
       },
       {
@@ -52,7 +52,7 @@ export default function NetZero({ serverStatus, serverData }) {
         firstString: "انتخاب ",
         secondString: "پروژه جبران",
         onClick: function () {
-          router.push(`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/`);
+          router.push(`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/carbon-project`);
         },
       },
       {
@@ -63,7 +63,7 @@ export default function NetZero({ serverStatus, serverData }) {
         firstString: "نظارت بر اهداف ",
         secondString: "انتشار آینده",
         onClick: function () {
-          router.push(`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/`);
+          router.push(`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/net-zero`);
         },
       },
     ],
@@ -264,7 +264,7 @@ const NetZeroPlans = ({ data, onFirstLoad, isFirstLoad }) => {
                   );
                 })}
                 <div style={{position:"absolute" , bottom:"30px"}}>
-                  <Link href={`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/`}>
+                  <Link href={`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/calculate/calculator`}>
                     <button className={`${styles.greenButton} green-button`}>
                     ارزیابی
                     </button>
@@ -322,7 +322,7 @@ const NetZeroPlans = ({ data, onFirstLoad, isFirstLoad }) => {
                   );
                 })}
                   <div style={{position:"absolute" , bottom:"30px"}}>
-                    <Link href={`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/`}>
+                    <Link href={`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/calculate/calculator`}>
                       <button className={`${styles.greenButton} green-button`}>
                       ارزیابی
                       </button>

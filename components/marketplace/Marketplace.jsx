@@ -46,10 +46,10 @@ export default function Marketplace() {
   const router = useRouter();
 
   let onGetApiClick = () => {
-    router.push(`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/`);
+    router.push(`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/certification`);
   };
   let onGetCodeClick = () => {
-    router.push(`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/`);
+    router.push(`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/certification`);
   };
   return (
     <>
@@ -175,7 +175,7 @@ const MarketplaceDetail = ({ data }) => {
               </span>
               <span className={styles.sectionDescription}>{item.subtitle}</span>
               <span className={styles.description}>{item.description}</span>
-              <Link href={`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/`}>
+              <Link href={`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/certification`}>
                 {item.isBlue && (
                   <button className="blue-light-button">{item.button}</button>
                 )}

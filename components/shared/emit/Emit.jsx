@@ -28,7 +28,7 @@ export default function Emit({title}) {
           height="113"
         />
       </div>
-      <Link href={`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/`}>
+      <Link href={`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/calculate/calculator`}>
         <button className="blue-light-button"> محاسبه </button>
       </Link>
     </section>

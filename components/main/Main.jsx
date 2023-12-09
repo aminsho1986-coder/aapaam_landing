@@ -37,7 +37,7 @@ export default function Main({ serverData }) {
         firstString: "محاسبه",
         secondString: "انتشار کربن",
         onClick: function () {
-          router.push(`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/`);
+          router.push(`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/calculate/calculator`);
         },
       },
       {
@@ -48,7 +48,7 @@ export default function Main({ serverData }) {
         firstString: "انتخاب",
         secondString: "پروژه جبران",
         onClick: function () {
-          router.push(`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/`);
+          router.push(`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/carbon-project`);
         },
       },
       {
@@ -59,7 +59,7 @@ export default function Main({ serverData }) {
         firstString: "جبران",
         secondString: "انتشار کربن",
         onClick: function () {
-          router.push(`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/`);
+          router.push(`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/offset`);
         },
       },
       {
@@ -70,7 +70,7 @@ export default function Main({ serverData }) {
         firstString: "مسیر",
         secondString: "نت زیرو",
         onClick: function () {
-          router.push(`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/`);
+          router.push(`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/net-zero`);
         },
       },
     ],
@@ -923,7 +923,7 @@ const SellsSection = () => {
         <span className="section-description">
         در بازار کربن آپام، می‌توانید اعتبار آزاد کربن خود را خرید و فروش کنید.
         </span>
-        <Link href={`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/`} >
+        <Link href={`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/trade`} >
           <button className="blue-light-button"> شروع کن! </button>
         </Link>
       </div>
@@ -939,7 +939,7 @@ const MarketSection = () => {
           src="/images/main/market-img.png"
           alt=""
           width="410"
-          height="320"
+          height="300"
         />
       </div>
       <div className="market-right">
