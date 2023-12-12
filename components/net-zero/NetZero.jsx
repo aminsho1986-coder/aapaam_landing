@@ -10,8 +10,6 @@ import Steps from "../shared/steps/Steps";
 import Help from "../shared/help/Help";
 import Footer from "../shared/footer/Footer";
 
-import stylePrice from "@/hooks/stylePrice";
-
 import styles from "./netZero.module.scss";
 import "./netZero.scss";
 
