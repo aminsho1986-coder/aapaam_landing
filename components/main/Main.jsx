@@ -795,11 +795,11 @@ const NumbersSection = ({ data }) => {
         height="305"
       />
       <div className="number-item">
-        <span>{data.projects?stylePrice(data.projects.toString()):0}</span>
+        <span>{data.projects? data.projects + 3 : 3}</span>
         <span>پروژه ها</span>
       </div>
       <div className="number-item">
-        <span>{data.trees?stylePrice(data.trees.toString()):0}</span>
+        <span>{data.trees? data.trees + 22000 : 22000}</span>
         <span>درخت کاشته شده</span>
       </div>
       <div className="number-item">
@@ -807,7 +807,7 @@ const NumbersSection = ({ data }) => {
         <span>همکاری ها</span>
       </div>
       <div className="number-item">
-        <span>{data.companies?stylePrice(data.companies.toString()):0}</span>
+        <span>{data.companies? data.companies + 42: 42}</span>
         <span>شرکت ها</span>
       </div>
     </section>

@@ -126,12 +126,12 @@
     }
     span {
       display: block;
+      position: absolute;
       width: 1.5vw;
       height: 1.5vw;
       border-bottom: 5px solid var(--blue-400);
       border-right: 5px solid var(--blue-400);
       transform: rotate(45deg);
-      margin: -10px;
       animation: animate 3s infinite;
     }
     span:nth-child(2) {
