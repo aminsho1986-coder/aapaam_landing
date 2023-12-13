@@ -795,11 +795,13 @@ const NumbersSection = ({ data }) => {
         height="305"
       />
       <div className="number-item">
-        <span>{data.projects? data.projects + 3 : 3}</span>
+        {/* <span>{data.projects? data.projects + 3 : 3}</span> */}
+        <span>3</span>
         <span>پروژه ها</span>
       </div>
       <div className="number-item">
-        <span>{data.trees? data.trees + 22000 : 22000}</span>
+        {/* <span>{data.trees? data.trees + 22000 : 22000}</span> */}
+        <span>22000</span>
         <span>درخت کاشته شده</span>
       </div>
       <div className="number-item">
@@ -807,7 +809,8 @@ const NumbersSection = ({ data }) => {
         <span>همکاری ها</span>
       </div>
       <div className="number-item">
-        <span>{data.companies? data.companies + 42: 42}</span>
+        {/* <span>{data.companies? data.companies + 42: 42}</span> */}
+        <span>42</span>
         <span>شرکت ها</span>
       </div>
     </section>
