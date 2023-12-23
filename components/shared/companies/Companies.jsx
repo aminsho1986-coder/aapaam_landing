@@ -21,11 +21,18 @@ export default function Companies() {
     { id: 7, img: "/images/shared/company7.png" },
     { id: 8, img: "/images/shared/company8.png" },
     { id: 9, img: "/images/shared/company9.png" },
-    { id: 9, img: "/images/shared/company10.png" },
-    { id: 9, img: "/images/shared/company11.png" },
-    { id: 9, img: "/images/shared/company12.png" },
-    { id: 9, img: "/images/shared/company13.png" },
-    { id: 9, img: "/images/shared/company14.png" },
+    { id: 10, img: "/images/shared/company10.png" },
+    { id: 11, img: "/images/shared/company11.png" },
+    { id: 12, img: "/images/shared/company12.png" },
+    { id: 13, img: "/images/shared/company13.png" },
+    { id: 14, img: "/images/shared/company14.png" },
+    { id: 15, img: "/images/shared/company15.png" },
+    { id: 16, img: "/images/shared/company16.png" },
+    { id: 17, img: "/images/shared/company17.png" },
+    { id: 18, img: "/images/shared/company18.png" },
+    { id: 19, img: "/images/shared/company19.png" },
+    { id: 20, img: "/images/shared/company20.png" },
+    { id: 21, img: "/images/shared/company21.png" },
   ]);
   const [slides, setSlides] = useState(3);
 
