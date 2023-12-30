@@ -110,11 +110,11 @@ const ProjectsSection = ({ data }) => {
           </div>
         </div>
 
-      <div className="container">
+      <div className="container-fluid px-5">
         <div className="row w-100 mb-5">
           {items.map((item) => {
             return (
-              <div className="col-md-6 my-5" key={item.title}>
+              <div className="col-md-4 my-5" key={item.title}>
                 <div className={styles.wrapper}>
                   <div className={styles.card}>
                     <Image src={item.images[0]} alt="" width="380" height="460" unoptimized={true} priority />
