@@ -82,12 +82,12 @@ const MarketplaceHeader = ({ onGetApiClick, onGetCodeClick }) => {
       <span className={`${styles.sectionTitle} section-title`}>
       آیا شما یک بازار، کسب و کار دیجیتال یا پلتفرم حمل و نقل دیجیتال هستید؟  
       </span>
-      {/* <Image
-        src="/images/individual/header.png"
+      <Image
+        src="/images/marketplace/resources.png"
         alt=""
-        width="1080"
-        height="495"
-      /> */}
+        width="920"
+        height="540"
+      />
       <div className={styles.buttonContainer}>
         <button className="blue-light-button" onClick={onGetApiClick}>
           سرویس API
