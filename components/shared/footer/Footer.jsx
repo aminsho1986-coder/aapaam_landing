@@ -13,7 +13,7 @@ export default function Footer() {
       <div className="row">
         <div className="footer-left">
           <div className="row w-100">
-            <div className="col-md-8 d-flex justify-content-center align-items-center">
+            <div className="col-md-4 d-flex justify-content-start align-items-center">
               <Image
                 src="/images/shared/main-logo-white.svg"
                 alt=""
@@ -22,10 +22,12 @@ export default function Footer() {
                 height="140"
               />
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 d-flex justify-content-end">
               <div className="h-100 d-flex justify-content-center align-items-center">
                 <a referrerPolicy='origin' target='_blank' href='https://trustseal.enamad.ir/u?id=376415&Code=LuIjtAjW9ZbUAGFP1ys3Kn7SPlxCYsQE'><img referrerPolicy='origin' src='https://trustseal.enamad.ir/logo.aspx?id=376415&Code=LuIjtAjW9ZbUAGFP1ys3Kn7SPlxCYsQE' alt='' style={{cursor:'pointer'}} Code='LuIjtAjW9ZbUAGFP1ys3Kn7SPlxCYsQE'/></a>
               </div>
+            </div>
+            <div className="col-md-4">
             </div>
           </div>
           <span>
