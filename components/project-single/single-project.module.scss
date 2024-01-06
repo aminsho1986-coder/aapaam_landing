@@ -203,6 +203,14 @@
           font-size: 0.6rem;
         }
       }
+      .expire {
+        font-size: 1.4rem;
+        color: var(--blue-800);
+        margin-right: 16px;
+        @media (max-width: 400px) {
+          font-size: 0.6rem;
+        }
+      }
     }
   }
   .questions {

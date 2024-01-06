@@ -104,6 +104,22 @@
   align-items: flex-end;
   transition: 0.5s ease-in-out;
   }
+  .expire {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--green-500);
+    border-radius: 100em 50em 0 100em;
+    display: flex;
+    align-items: center;
+    padding: .75em 2em;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--gray-50);
+    @media (max-width: 900px) {
+      font-size: 1rem;
+    }
+  }
   .card:hover {
     transform: translateY(20px); }
     .card:hover:after {

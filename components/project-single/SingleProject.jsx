@@ -108,6 +108,13 @@ export default function SingleProject({ serverStatus, serverData }) {
                 </div>
               </div>
               <div className={styles.bottom}>
+                {
+                  serverData.expire ? 
+                  <span className={styles.expire}>
+                   (تمام شده)
+                  </span>
+                  : null
+                  }
                 <span className={styles.subject}> تومان / هر تن </span>
                 <span className={styles.value}>
                   {serverData.carbonPrice.toString()} {" "}

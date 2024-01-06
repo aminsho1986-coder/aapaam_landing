@@ -51,12 +51,10 @@ const ProjectsSection = ({ data }) => {
 
 
   useEffect( () => {
-
     if(cat === "all")
       setitems(data);
     else
       setitems(data.filter(el => el.projectType === cat));
-
   } , [cat])
 
  
@@ -110,7 +108,7 @@ const ProjectsSection = ({ data }) => {
           </div>
         </div>
 
-      <div className="container-fluid px-5">
+      <div className="container-fluid px-md-5 px-0" dir="ltr">
         <div className="row w-100 mb-5">
           {items.map((item) => {
             return (
@@ -118,6 +116,12 @@ const ProjectsSection = ({ data }) => {
                 <div className={styles.wrapper}>
                   <div className={styles.card}>
                     <Image src={item.images[0]} alt="" width="380" height="460" unoptimized={true} priority />
+                    {item.expire ? 
+                      <span className={styles.expire}>
+                        تمام شده
+                      </span>
+                      : null
+                    }
                     <div className={styles.cardBody}>
                       <div className="row">
                         <div className="col-7 m-auto col-sm-7">
