@@ -85,8 +85,8 @@ const MarketplaceHeader = ({ onGetApiClick, onGetCodeClick }) => {
       <Image
         src="/images/marketplace/resources.png"
         alt=""
-        width="920"
-        height="540"
+        width="820"
+        height="580"
       />
       <div className={styles.buttonContainer}>
         <button className="blue-light-button" onClick={onGetApiClick}>

@@ -10,8 +10,7 @@
     padding-bottom: 20px;
   }
   img {
-    margin: 32px 0 32px 0;
-    height: 540px;
+    height: 580px;
     @media (max-width: 950px) {
       width: 100%;
       padding: 0 22px;
@@ -29,7 +28,6 @@
     justify-content: center;
     width: 100%;
     flex-wrap: wrap;
-    margin-top: 24px;
     button {
       width: 280px;
       height: 53px;

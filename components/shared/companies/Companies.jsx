@@ -48,7 +48,7 @@ export default function Companies() {
   }
 
   return (
-    <section className="companies body-container" style={{backgroundColor:"#f1f1f1",margin:"2rem 0",padding:"2rem 0"}}>
+    <section className="companies body-container" style={{backgroundColor:"#f1f1f1",margin:"3rem 0",padding:"4rem 0"}}>
       <span className="section-title">ده ها کسب‌ و کار در این مسیر با ما همراه هستند، شما هم به ما بپیوندید!</span>
       <div ref={companiesWrapper} className="bottom-companies">
         <Swiper

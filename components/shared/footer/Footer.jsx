@@ -111,8 +111,22 @@ export default function Footer() {
         </div>
       </div>
       <div className="row">
-        <div className="footer-rights">
+        <div className="footer-rights text-left">
           <span className="footer-text">Copyright © {year} Aapaam Group. All Rights Reserved.</span>
+          <div className="footer-bottom">
+            <Link href="/terms" >
+              <span className="footer-text"> شرایط استفاده </span>
+            </Link>
+            <Link href="/about" className="px-2">
+              <span className="footer-text"> درباره‌ی ما </span>
+            </Link>
+            <Link href="/projects" >
+              <span className="footer-text"> پروژه‌های ما </span>
+            </Link>
+            <Link href="/resources" className="px-2">
+              <span className="footer-text"> امکانات دیگر </span>
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
