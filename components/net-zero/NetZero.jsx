@@ -238,7 +238,7 @@ const NetZeroPlans = ({ data, onFirstLoad, isFirstLoad }) => {
                 </div>
                 <div className={styles.line}></div>
 
-                <div className={styles.firstOffset}>
+                {/* <div className={styles.firstOffset}>
                   <Image
                       src="/images/netZero/benefit-item-img.png"
                       alt=""
@@ -246,7 +246,7 @@ const NetZeroPlans = ({ data, onFirstLoad, isFirstLoad }) => {
                       height="18"
                       />
                   <span> شروع با : {item.firstOffset}% جبران </span>
-                </div>
+                </div> */}
                 
                 {item.benefits.map((benefitItem) => {
                   return (
@@ -296,7 +296,7 @@ const NetZeroPlans = ({ data, onFirstLoad, isFirstLoad }) => {
                 </div>
                 <div className={styles.line}></div>
 
-                <div className={styles.firstOffset}>
+                {/* <div className={styles.firstOffset}>
                   <Image
                       src="/images/netZero/benefit-item-img.png"
                       alt=""
@@ -304,7 +304,7 @@ const NetZeroPlans = ({ data, onFirstLoad, isFirstLoad }) => {
                       height="18"
                       />
                   <span> شروع با : {item.firstOffset}% جبران </span>
-                </div>
+                </div> */}
                 
                 {item.benefits.map((benefitItem) => {
                   return (

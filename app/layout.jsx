@@ -127,7 +127,6 @@ export async function generateMetadata({ params }) {
       index: true,
       follow: true,
     },
-    // manifest: "https://talasea.ir/manifest.json",
     twitter: {
       card: "summary_large_image",
       title: "آپام پلتفرم ارزیابی و جبران انتشار کربن | نت زیرو | خرید و فروش اعتبار کربن",
