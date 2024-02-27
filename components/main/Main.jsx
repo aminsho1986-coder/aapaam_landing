@@ -168,8 +168,8 @@ export default function Main({ serverData }) {
 
       {/* <!-- =====================START COUNTER SECTION========================== --> */}
       <CounterSection
-        trees={serverData.response.trees}
-        co2={serverData.response.co2}
+        trees={Math.round(serverData.response.trees)}
+        co2={Math.round(serverData.response.co2)}
       />
       {/* <!-- =====================END COUNTER SECTION========================== --> */}
 
@@ -284,6 +284,9 @@ const HeaderSection = () => {
 
 const CounterSection = ({ trees=0, co2=0 }) => {
   let numbersToTen = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+  console.log(co2)
+  console.log(trees)
 
   let treesString = "0".repeat(8 - trees.toString().length) + trees.toString();
   let co2String = "0".repeat(8 - co2.toString().length) + co2.toString();

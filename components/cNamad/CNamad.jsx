@@ -71,6 +71,18 @@ const CNamadCompanyDetail = ({ data }) => {
               <span className={styles.itemSubtitle}>{data.webSite ? data.webSite : "-"}</span>
             </div>
             <div className={styles.item}>
+              <span className={styles.itemTitle}>در سال:</span>
+              <span className={styles.itemSubtitle}>{data.offsetYear}</span>
+            </div>
+            <div className={styles.item}>
+              <span className={styles.itemTitle}>مقدار کربن جبران شده:</span>
+              <span className={styles.itemSubtitle}>{data.offsetAmount} تن</span>
+            </div>
+            <div className={styles.item}>
+              <span className={styles.itemTitle}>میزان انتشار جبران شده:</span>
+              <span className={styles.itemSubtitle}>{data.offsetPercent}%</span>
+            </div>
+            {/* <div className={styles.item}>
               <span className={styles.itemTitle}>تاریخ اعطای نماد:</span>
               <span className={styles.itemSubtitle}>
                 {new Date(data.createLinkAt).toLocaleDateString("fa-ir", {
@@ -79,7 +91,7 @@ const CNamadCompanyDetail = ({ data }) => {
                   month: "short",
                 })}
               </span>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
