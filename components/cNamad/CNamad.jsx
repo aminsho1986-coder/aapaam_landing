@@ -71,18 +71,14 @@ const CNamadCompanyDetail = ({ data }) => {
               <span className={styles.itemSubtitle}>{data.webSite ? data.webSite : "-"}</span>
             </div>
             <div className={styles.item}>
-              <span className={styles.itemTitle}>در سال:</span>
-              <span className={styles.itemSubtitle}>{data.offsetYear}</span>
-            </div>
-            <div className={styles.item}>
               <span className={styles.itemTitle}>مقدار کربن جبران شده:</span>
               <span className={styles.itemSubtitle}>{data.offsetAmount} تن</span>
             </div>
             <div className={styles.item}>
-              <span className={styles.itemTitle}>میزان انتشار جبران شده:</span>
-              <span className={styles.itemSubtitle}>{data.offsetPercent}%</span>
+              <span className={styles.itemTitle}>معادل درخت کاشته شده:</span>
+              <span className={styles.itemSubtitle}>حدود {Math.round(data.trees)} عدد</span>
             </div>
-            {/* <div className={styles.item}>
+            <div className={styles.item}>
               <span className={styles.itemTitle}>تاریخ اعطای نماد:</span>
               <span className={styles.itemSubtitle}>
                 {new Date(data.createLinkAt).toLocaleDateString("fa-ir", {
@@ -91,7 +87,7 @@ const CNamadCompanyDetail = ({ data }) => {
                   month: "short",
                 })}
               </span>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>
@@ -189,14 +185,14 @@ const CNamadCompanyInvestments = ({ data }) => {
       <div className={styles.projectsContainer}>
         {data.projects ? data.projects.map((project) => {
           return (
-            <Link href={`/projects/${project.project._id}`} key={project._id}>
+            <Link href={`/projects/${project.project.slug}`} key={project._id}>
               <div className={styles.projectItem}>
                 <div className={styles.itemContent}>
                   <Image
                     className={styles.mainImg}
                     src={
                       process.env.NEXT_PUBLIC_BASE_URL_IMAGES +
-                      project.project.images[1]
+                      project.project.images[0]
                     }
                     alt=""
                     width="255"
