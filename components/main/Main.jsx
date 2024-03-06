@@ -887,16 +887,9 @@ const JourneySection = () => {
         نت‌زیرو یک سرویس مداوم شخصی‌سازی شده برای کسب و کارها می‌باشد؛ تا کسب و کارها در قالب برنامه‌های سالانه ردپای کربن خود را کاهش دهند. با پیوستن به این جنبش جهانی، کسب و کارها برای رسیدن به هدف 1.5 درجه سانتی گراد توافق پاریس کمک خواهند کرد
         </span>
         <div className="buttonRow">
-          <Link href="/net-zero">
+          <Link href="/net-zero/#plans">
             <button className="blueLightButton blue-light-button">
-              <Image
-                src="/images/main/header-button-icon.png"
-                alt=""
-                width="23"
-                height="23"
-              />
-              <span className="buttonText"> ویدیو </span>
-
+              <span className="buttonText"> بپیوندید </span>
             </button>
           </Link>
           <Link href="/net-zero">

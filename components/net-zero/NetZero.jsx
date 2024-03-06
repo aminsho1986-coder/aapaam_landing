@@ -216,7 +216,7 @@ const NetZeroPlans = ({ data, onFirstLoad, isFirstLoad }) => {
     }
   }, [isFirstLoad]);
   return (
-    <section className={`${styles.netZeroPlans} body-container`} ref={plansRef}>
+    <section className={`${styles.netZeroPlans} body-container`} ref={plansRef} id="plans">
       <span className={`${styles.sectionTitle} section-title`}>
         تا سال 2030
       </span>

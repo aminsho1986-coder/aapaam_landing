@@ -296,15 +296,9 @@ const CompanyJourney = () => {
         با پیوستن به مسیر نت زیرو، شما با یک تلاش جهانی در راه مقابله با تغییرات اقلیمی و ایجاد آینده پایدار همراه می‌شوید.
         </span>
         <div className={styles.buttonRow}>
-          <Link href="/net-zero">
+          <Link href="/net-zero/#plans">
             <button className={`${styles.blueLightButton} blue-light-button`}>
-              <Image
-                src="/images/main/header-button-icon.png"
-                alt=""
-                width="23"
-                height="23"
-              />
-                <span className={styles.buttonText}> ویدیو</span>
+                <span className={styles.buttonText}> بپیوندید</span>
             </button>
           </Link>
           <Link href="/net-zero">
