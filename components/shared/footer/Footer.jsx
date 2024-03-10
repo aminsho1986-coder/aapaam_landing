@@ -19,7 +19,7 @@ export default function Footer() {
                 alt=""
                 className="logo"
                 width="200"
-                height="140"
+                height="200"
               />
             </div>
             <div className="col-md-4 d-flex justify-content-end">
@@ -95,7 +95,7 @@ export default function Footer() {
               </div>
               <div className="d-flex mb-2">
                 <i className="fa-solid fa-phone" style={{marginTop:"5px",marginInlineEnd:"10px",color:"#e0ebec"}}></i>
-                <span className="footer-text">021-91010343</span>
+                <span className="footer-text">02191010343 - 09123582419</span>
               </div>
               <div className="d-flex mb-2">
                 <i className="fa-brands fa-usps" style={{marginTop:"5px",marginInlineEnd:"10px",color:"#e0ebec"}}></i>

@@ -72,19 +72,21 @@ export default function NetZero({ serverStatus, serverData }) {
       description:
         "مسیر نت زیرو 2030 نقشه‌راهی است برای کاهش تدریجی انتشار گازهای گلخانه‌ای همراه با گزارش خوداظهاری در راستای شفافیت در این مسیر؛ و مسیر نت زیرو 2050 با هدف بلند مدت کربن خنثی کامل در این سه دهه پیش‌روی می‌باشد.",
       mainImg: "/images/company/question-img1.webp",
+      pdf: "/files/Evaluation.pdf"
     },
     {
       title: "چگونه می‌توانید ردپای سالانه خود را محاسبه کنید؟",
       description:
         "محاسبه ردپای سالانه شما با استفاده از سرویس تحت‌ وب ما بسیار آسان است!  با انتخاب برنامه مناسب کسب و کارخود، داده‌ها را وارد کنید و طبق دستورالعمل ما پیش‌ روید و از دیدگاه ما درباره تاثیرات زیست محیطی خود کمک بگیرید.",
       mainImg: "/images/company/question-img1.webp",
+      pdf: "/files/Netzero.pdf"
     },
-    {
-      title: "چه عواملی بر هزینه‌ و کیفیت پروژه جبرانی شما پس از ارزیابی تأثیر می گذارد؟",
-      description:
-        "هزینه‌ها و کیفیت پروژه جبرانی به عواملی مانند نوع پروژه، مکان، مقیاس، روش و پویایی بازار بستگی دارد؛ از این روی ما در کنار شما برای انتخاب پایدار و مقرون به صرفه در جهت آینده‌ای سبز‌تر قدم بردارید.",
-      mainImg: "/images/company/question-img1.webp",
-    },
+    // {
+    //   title: "چه عواملی بر هزینه‌ و کیفیت پروژه جبرانی شما پس از ارزیابی تأثیر می گذارد؟",
+    //   description:
+    //     "هزینه‌ها و کیفیت پروژه جبرانی به عواملی مانند نوع پروژه، مکان، مقیاس، روش و پویایی بازار بستگی دارد؛ از این روی ما در کنار شما برای انتخاب پایدار و مقرون به صرفه در جهت آینده‌ای سبز‌تر قدم بردارید.",
+    //   mainImg: "/images/company/question-img1.webp",
+    // },
   ]);
 
   const plansElement = useRef(null);
@@ -181,7 +183,7 @@ const NetZeroQuestions = ({ data }) => {
               </span>
               <span className={styles.description}>{item.description}</span>
               <div className={styles.buttonContainer}>
-                <button className="blue-light-button">
+                <Link className="blue-light-button" href={item.pdf} target="_blank">
                   <span>دانلود pdf</span>
                   <Image
                     src="/images/shared/download.png"
@@ -189,7 +191,7 @@ const NetZeroQuestions = ({ data }) => {
                     width="31"
                     height="31"
                   />
-                </button>
+                </Link>
               </div>
             </div>
             <div className={styles.imgContainer}>
