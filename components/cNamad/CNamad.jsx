@@ -187,7 +187,7 @@ const CNamadCompanyInvestments = ({ data }) => {
       <div className={styles.projectsContainer}>
         {data.projects ? data.projects.map((project) => {
           return (
-            <Link href={`/projects/${project.project.slug}`} target="_blank" key={project._id}>
+            <div  key={project._id}>
               <div className={styles.projectItem}>
                 <div className={styles.itemContent}>
                   <Image
@@ -213,7 +213,7 @@ const CNamadCompanyInvestments = ({ data }) => {
                   </div>
                 </div>
               </div>
-            </Link>
+            </div>
           );
         }) : null}
       </div>
