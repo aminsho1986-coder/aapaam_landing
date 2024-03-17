@@ -33,7 +33,7 @@ export default function CNamad({ serverStatus, serverData }) {
               <p>{serverData.message}</p>
             </div>
           }
-          <CNamadCompanyExperience />
+          <CNamadCompanyExperience data={serverData}/>
           <CNamadBottomImg />
         </div>
       </div>
@@ -46,10 +46,10 @@ const CNamadNav = () => {
     <nav className={styles.cNamadNav}>
       <Link href="/">
         <Image
-          src={"/images/main/top-logo.svg"}
+          src={"/images/main/main-logo.svg"}
           alt=""
-          width="130"
-          height="180"
+          width="250"
+          height="300"
         />
       </Link>
     </nav>
@@ -97,47 +97,45 @@ const CNamadCompanyDetail = ({ data }) => {
       <div className="col-md-6">
           <div className="row d-flex justify-content-center align-items-center">
             <div className={styles.earth}>
-                <Image
+                {/* <Image
                   src="/images/cNamad/earth.svg"
                   alt=""
                   width="150"
                   height="150"
-                  // style={{paddingRight:`${100-data.percentage}%`}}
+                  style={{paddingRight:`${100-data.percentage}%`}}
                   style={{paddingRight:`0%`}}
-                />
+                /> */}
                 <Image
-                  src="/images/cNamad/earth.svg"
+                  src="/images/cNamad/earth.jpg"
                   alt=""
-                  width="150"
-                  height="150"
+                  width="220"
+                  height="220"
                 />
               </div>
           </div>
 
-          <div className="row d-flex justify-content-center mt-4">
+          {/* <div className="row d-flex justify-content-center mt-4">
             <div className={styles.containerStyles}>
-              {/* <div className={styles.fillerStyles} style={{width:`${data.percentage}%`}}>
+              <div className={styles.fillerStyles} style={{width:`${data.percentage}%`}}>
                 <span className={styles.labelStyles}>{`${data.percentage}%`}</span>
-              </div> */}
+              </div>
               <div className={styles.fillerStyles} style={{width:`100%`}}>
                 <span className={styles.labelStyles}>100%</span>
               </div>
             </div>
-          </div>
+          </div> */}
       </div>
 
     </div>
   );
 };
 
-const CNamadCompanyExperience = () => {
+const CNamadCompanyExperience = ({data}) => {
   return (
     <div className={styles.companyExperience}>
       <span className={`${styles.cNamadTitle} pe-4 pe-md-0`}> درباره ی این نماد : </span>
       <span className={`${styles.cNamadDescription} px-5 px-md-0`}>
-      نماد کربن صفر به اين معني است كه صاحب یک کسب و کار یا برگزارکننده ی یک رویداد با ارزيابي و اقدام موثر، گازهاى گلخانه اي منتشر شده را خنثي نموده است.
-      <br/>
-      این نماد ماحصل اقدامات‌ موثرى است که برای کاهش اثرات منفی خود بر محیط زیست انجام شده است.
+      این مجموعه در راستای حمایت از محیط زیست بخشی از رد پای کربن خود را با مشارکت در پروژه {data.projects[0].title}  جبران نموده است.  
       </span>
     </div>
   );
@@ -211,7 +209,7 @@ const CNamadCompanyInvestments = ({ data }) => {
                     <span>{project.project.species.name}</span>
                   </div>
                   <div className={styles.link}>
-                    <Link href={`/projects/${project.project.slug}`} target="_blank" > جزییات پروژه </Link>
+                    <Link href={`/projects/${project.project.slug}`} target="_blank" > مشاهده پروژه </Link>
                   </div>
                 </div>
               </div>
@@ -224,7 +222,6 @@ const CNamadCompanyInvestments = ({ data }) => {
 };
 
 const CNamadCompanyTrees = ({ data }) => {
-  console.log(data.trees)
   return (
     <div className={styles.companyInvestments}>
       <span className={`${styles.cNamadTitle} pe-4 pe-md-0`}> درختان : </span>
@@ -249,7 +246,7 @@ const CNamadBottomImg = () => {
     <div className={styles.bottomImg}>
       <Image
         className={styles.mainImg}
-        src="/images/cNamad/cNamad.png"
+        src="/images/cNamad/cNamad.jpg"
         alt=""
         width="860"
         height="520"
