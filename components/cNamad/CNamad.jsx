@@ -23,6 +23,8 @@ export default function CNamad({ serverStatus, serverData }) {
               : null
             }
             <CNamadCompanyInvestments data={serverData} />
+
+            <CNamadCompanyTrees data={serverData} />
             </>
             : 
             <div className={styles.error}>
@@ -71,12 +73,12 @@ const CNamadCompanyDetail = ({ data }) => {
               <span className={styles.itemSubtitle}>{data.webSite ? data.webSite : "-"}</span>
             </div>
             <div className={styles.item}>
-              <span className={styles.itemTitle}>مقدار کربن جبران شده:</span>
-              <span className={styles.itemSubtitle}>{data.offsetAmount} تن</span>
+              <span className={styles.itemTitle}>مقدار کربن خریداری شده:</span>
+              <span className={styles.itemSubtitle}>{data.carbonAmount} تن</span>
             </div>
             <div className={styles.item}>
               <span className={styles.itemTitle}>معادل درخت کاشته شده:</span>
-              <span className={styles.itemSubtitle}>حدود {Math.round(data.trees)} عدد</span>
+              <span className={styles.itemSubtitle}>{data.trees.length} عدد</span>
             </div>
             <div className={styles.item}>
               <span className={styles.itemTitle}>تاریخ اعطای نماد:</span>
@@ -131,11 +133,11 @@ const CNamadCompanyDetail = ({ data }) => {
 const CNamadCompanyExperience = () => {
   return (
     <div className={styles.companyExperience}>
-      <span className={styles.cNamadTitle}> درباره ی این نماد : </span>
-      <span className={styles.cNamadDescription}>
-      نماد رویداد کربن صفر به اين معني است كه برگزار كننده يك رويداد با ارزيابي و اقدام موثر، گازهاى گلخانه اي منتشر شده از برگزاري آن رويداد را خنثي نموده است.
+      <span className={`${styles.cNamadTitle} pe-4 pe-md-0`}> درباره ی این نماد : </span>
+      <span className={`${styles.cNamadDescription} px-5 px-md-0`}>
+      نماد کربن صفر به اين معني است كه صاحب یک کسب و کار یا برگزارکننده ی یک رویداد با ارزيابي و اقدام موثر، گازهاى گلخانه اي منتشر شده را خنثي نموده است.
       <br/>
-      این نماد ماحصل اقدامات‌ موثرى است که یک سازمان برای کاهش اثرات منفی خود بر محیط زیست برای آن رويداد انجام داده است.
+      این نماد ماحصل اقدامات‌ موثرى است که برای کاهش اثرات منفی خود بر محیط زیست انجام شده است.
       </span>
     </div>
   );
@@ -187,7 +189,7 @@ const CNamadCompanyInvestments = ({ data }) => {
       <div className={styles.projectsContainer}>
         {data.projects ? data.projects.map((project) => {
           return (
-            <Link href={`/projects/${project.project.slug}`} key={project._id}>
+            <Link href={`/projects/${project.project.slug}`} target="_blank" key={project._id}>
               <div className={styles.projectItem}>
                 <div className={styles.itemContent}>
                   <Image
@@ -197,17 +199,46 @@ const CNamadCompanyInvestments = ({ data }) => {
                       project.project.images[0]
                     }
                     alt=""
-                    width="255"
-                    height="170"
+                    width="380"
+                    height="160"
+                    priority
                   />
                   <div className={styles.title}>
                     <span>{project.project.title}</span>
+                  </div>
+                  <div className={styles.species}>
+                    <span>نوع گونه:</span>
+                    <span>{project.project.species.name}</span>
+                  </div>
+                  <div className={styles.link}>
+                    <Link href={`/projects/${project.project.slug}`} target="_blank" > جزییات پروژه </Link>
                   </div>
                 </div>
               </div>
             </Link>
           );
         }) : null}
+      </div>
+    </div>
+  );
+};
+
+const CNamadCompanyTrees = ({ data }) => {
+  console.log(data.trees)
+  return (
+    <div className={styles.companyInvestments}>
+      <span className={`${styles.cNamadTitle} pe-4 pe-md-0`}> درختان : </span>
+      <div className="row w-100 pe-4 pe-md-0">
+        <p className={styles.trees}> شامل {data.trees.length} عدد درخت به کد های : </p>
+      </div>
+      <div className="row w-100 pe-4 pe-md-0">
+        {data.trees ? data.trees.map((tree) => {
+            return (
+              <div className='col-2 col-md-1'>
+                <span className={styles.tree}> {tree.code} </span>
+              </div>
+            );
+          }) : null} 
       </div>
     </div>
   );

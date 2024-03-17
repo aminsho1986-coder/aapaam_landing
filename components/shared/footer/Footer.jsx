@@ -117,13 +117,13 @@ export default function Footer() {
             <Link href="/terms" >
               <span className="footer-text"> شرایط استفاده </span>
             </Link>
-            <Link href="/about" className="px-2">
+            <Link href="/about" className="px-3">
               <span className="footer-text"> درباره‌ی ما </span>
             </Link>
             <Link href="/projects" >
               <span className="footer-text"> پروژه‌های ما </span>
             </Link>
-            <Link href="/resources" className="px-2">
+            <Link href="/resources" className="px-3">
               <span className="footer-text"> امکانات دیگر </span>
             </Link>
           </div>
