@@ -234,7 +234,7 @@ const CNamadCompanyTrees = ({ data }) => {
       <div className="row w-100 pe-4 pe-md-0">
         {data.trees ? data.trees.map((tree) => {
             return (
-              <div className='col-2 col-md-1'>
+              <div className='col-2 col-md-1' key={tree._id}>
                 <span className={styles.tree}> {tree.code} </span>
               </div>
             );
