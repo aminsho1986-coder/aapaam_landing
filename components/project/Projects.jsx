@@ -108,7 +108,7 @@ const ProjectsSection = ({ data }) => {
           </div>
         </div>
 
-      <div className="container-fluid px-md-5 px-0" dir="ltr">
+      <div className="container-fluid px-md-5 px-0" >
         <div className="row w-100 mb-5">
           {items.map((item) => {
             return (

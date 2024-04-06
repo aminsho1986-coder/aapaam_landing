@@ -24,7 +24,7 @@ export default function Footer() {
             </div>
             <div className="col-md-4 d-flex justify-content-end">
               <div className="h-100 d-flex justify-content-center align-items-center">
-                <a referrerPolicy='origin' target='_blank' href='https://trustseal.enamad.ir/u?id=376415&Code=LuIjtAjW9ZbUAGFP1ys3Kn7SPlxCYsQE'><img referrerPolicy='origin' src='https://trustseal.enamad.ir/logo.aspx?id=376415&Code=LuIjtAjW9ZbUAGFP1ys3Kn7SPlxCYsQE' alt='' style={{cursor:'pointer'}} Code='LuIjtAjW9ZbUAGFP1ys3Kn7SPlxCYsQE'/></a>
+                <a referrerPolicy='origin' target='_blank' href='https://trustseal.enamad.ir/u?id=376415&Code=LuIjtAjW9ZbUAGFP1ys3Kn7SPlxCYsQE'><img referrerPolicy='origin' src='https://trustseal.enamad.ir/logo.aspx?id=376415&Code=LuIjtAjW9ZbUAGFP1ys3Kn7SPlxCYsQE' alt='' style={{cursor:'pointer'}} code='LuIjtAjW9ZbUAGFP1ys3Kn7SPlxCYsQE'/></a>
               </div>
             </div>
             <div className="col-md-4">
