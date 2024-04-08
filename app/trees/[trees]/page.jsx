@@ -10,7 +10,7 @@ export default function TreePage({ params }) {
   const parsedData = JSON.parse(data);
 
   const treeData = parsedData.filter((item) => {
-    return item.id == params.tree;
+    return item.id == params.trees;
   });
   if (treeData.length == 0) {
     notFound();
