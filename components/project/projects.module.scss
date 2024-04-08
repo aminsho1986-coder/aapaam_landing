@@ -174,20 +174,20 @@
     display: block;
   }
   .cardBody h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: var(--light-blue-text-color);
     @media (max-width: 900px) {
-      font-size: 1.7rem;
+      font-size: 1.6rem;
     }
     @media (max-width: 500px) {
       font-size: 1.4rem;
     }
   }
   .card .info h1 {
-    font-size: 2rem;
+    font-size: 8rem;
     color: var(--light-blue-text-color);
     @media (max-width: 900px) {
-      font-size: 1.7rem;
+      font-size: 1.6rem;
     }
     @media (max-width: 500px) {
       font-size: 1.4rem;
