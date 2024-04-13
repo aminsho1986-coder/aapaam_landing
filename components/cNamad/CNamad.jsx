@@ -228,8 +228,8 @@ const CNamadCompanyTrees = ({ data }) => {
   const [trees2 , settrees2] = useState([]);
 
   useEffect( () => {
-    if(data.trees.length > 72){
-      const first = data.trees.slice(0,72);
+    if(data.trees.length > 48){
+      const first = data.trees.slice(0,36);
       const last = data.trees.slice(-12);
       settrees1(first)
       settrees2(last)
@@ -244,7 +244,7 @@ const CNamadCompanyTrees = ({ data }) => {
       <p className={styles.trees}> شامل {data.trees.length} عدد درخت به کد های : </p>
       </div>
       <div className="row w-100 pe-4 pe-md-0">
-      {data.trees ? data.trees.length < 72 ?
+      {data.trees ? data.trees.length < 48 ?
 
         data.trees.map((tree) => {
           return (
