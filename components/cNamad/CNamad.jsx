@@ -3,6 +3,7 @@
 import Image from "next/image";
 import styles from "./cNamad.module.scss";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 
 export default function CNamad({ serverStatus, serverData }) {
@@ -18,13 +19,13 @@ export default function CNamad({ serverStatus, serverData }) {
             <>
             <CNamadCompanyDetail data={serverData} />
             {
-              serverData.activityType === "PRODUCTIVE" ?
+              serverData.activityType === "PRODUCTIVE" && serverData.products.length !== 0?
               <CNamadCompanyProduct data={serverData}/>
               : null
             }
             <CNamadCompanyInvestments data={serverData} />
 
-            <CNamadCompanyTrees data={serverData} />
+            <CNamadCompanyTrees data={serverData}/>
             </>
             : 
             <div className={styles.error}>
@@ -222,20 +223,63 @@ const CNamadCompanyInvestments = ({ data }) => {
 };
 
 const CNamadCompanyTrees = ({ data }) => {
+
+  const [trees1 , settrees1] = useState([]);
+  const [trees2 , settrees2] = useState([]);
+
+  useEffect( () => {
+    if(data.trees.length > 72){
+      const first = data.trees.slice(0,72);
+      const last = data.trees.slice(-12);
+      settrees1(first)
+      settrees2(last)
+    }
+  } , [data])
+
+
   return (
     <div className={styles.companyInvestments}>
       <span className={`${styles.cNamadTitle} pe-4 pe-md-0`}> درختان : </span>
       <div className="row w-100 pe-4 pe-md-0">
-        <p className={styles.trees}> شامل {data.trees.length} عدد درخت به کد های : </p>
+      <p className={styles.trees}> شامل {data.trees.length} عدد درخت به کد های : </p>
       </div>
       <div className="row w-100 pe-4 pe-md-0">
-        {data.trees ? data.trees.map((tree) => {
-            return (
-              <div className='col-2 col-md-1' key={tree._id}>
-                <span className={styles.tree}> {tree.code} </span>
-              </div>
-            );
-          }) : null} 
+      {data.trees ? data.trees.length < 72 ?
+
+        data.trees.map((tree) => {
+          return (
+                <div className='col-2 col-md-1' key={tree._id}>
+                  <span className={styles.tree}> {tree.code} </span>
+                </div>
+              );
+            }) 
+        :
+        <>
+        {trees1.map((tree) => {
+          return (
+            <div className='col-2 col-md-1' key={tree._id}>
+              <span className={styles.tree}> {tree.code} </span>
+            </div>
+          );
+        }) }
+        <div>
+          .
+          <br />
+          .
+          <br />
+          .
+        </div>
+        {trees2.map((tree) => {
+          return (
+            <div className='col-2 col-md-1' key={tree._id}>
+              <span className={styles.tree}> {tree.code} </span>
+            </div>
+          );
+        }) }
+        
+        </>
+
+      : null} 
       </div>
     </div>
   );

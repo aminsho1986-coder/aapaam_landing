@@ -30,8 +30,9 @@
     width: 100%;
   }
   .logo {
-    @media (max-width: 320px) {
-      width: 100%;
+    @media (max-width: 850px) {
+      width: 140px;
+      height: 140px;
     }
   }
   span {
@@ -186,7 +187,7 @@
     font-size: .9rem;
     font-weight: lighter;
     @media (max-width: 850px) {
-      font-size: .85rem;
+      font-size: .65rem;
       padding: 5px 0;
     }
   }

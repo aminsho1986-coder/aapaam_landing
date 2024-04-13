@@ -189,7 +189,7 @@ const CompanyHeader = ({ onBuyPlanClick }) => {
         >
           ارزیابی
         </button>
-        <span className={`${styles.sectionTitle} section-title`} style={{color:"#535353"}}>or</span>
+        <span className={`${styles.sectionTitle} section-title`} style={{color:"#535353"}}>یا</span>
         <Link href="/net-zero">
           <button className="green-button"> پیوستن به مسیر نت زیرو </button>
         </Link>
