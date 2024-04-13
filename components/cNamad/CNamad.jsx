@@ -19,7 +19,7 @@ export default function CNamad({ serverStatus, serverData }) {
             <>
             <CNamadCompanyDetail data={serverData} />
             {
-              serverData.activityType === "PRODUCTIVE" && serverData.products.length !== 0?
+              serverData.activityType === "PRODUCTIVE" && serverData.products.length !== 0 ?
               <CNamadCompanyProduct data={serverData}/>
               : null
             }
