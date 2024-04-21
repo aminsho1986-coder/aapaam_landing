@@ -46,8 +46,9 @@ const ProjectsHeader = () => {
 
 const ProjectsSection = ({ data }) => {
 
+  const [toggle , settoggle] = useState(false);
   const [cat , setcat] = useState("all");
-  const [items , setitems] = useState([]);
+  const [items , setitems] = useState(data);
 
 
   useEffect( () => {
@@ -58,6 +59,17 @@ const ProjectsSection = ({ data }) => {
   } , [cat])
 
  
+  useEffect(() => {
+    if (toggle) {
+      const newItems = items.filter((item) => {
+        return item.expire === false;
+      });
+      setitems(newItems)
+    } else {
+      setitems(data)
+    }
+  } , [toggle])
+
 
   return (
     <section className={`${styles.projects} body-container`}>
@@ -109,6 +121,13 @@ const ProjectsSection = ({ data }) => {
         </div>
 
       <div className="container-fluid px-md-5 px-0" >
+        <div className={styles.right}>
+          <span> موجودها </span>
+          <div className={styles.toggle} onClick={() => settoggle(!toggle)}>
+            <div className={styles.back}></div>
+            <div className={toggle ? `${styles.toggler} ${styles.on}` : `${styles.toggler} ${styles.off}`}></div>
+          </div>
+        </div>
         <div className="row w-100 mb-5">
           {items.map((item) => {
             return (

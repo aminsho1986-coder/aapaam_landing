@@ -32,17 +32,9 @@ export default function Footer() {
           آپام یک پلتفرم نرم‌افزار به‌عنوان سرویس (SaaS) است که به کسب‌وکارها و افراد این امکان را می‌دهد تا ردپای کربن خود را کاهش دهند و تأثیر واقعی در مبارزه با تغییرات آب و هوایی بگذارند.
           </span>
           <div className="media-row">
-            <Link href={"https://twitter.com/Aapaamgroup"}>
+            <Link href={"https://www.linkedin.com/company/%D8%B1%D9%88%DB%8C%D8%B4-%DA%AF%D8%B3%D8%AA%D8%B1%D8%B2%DB%8C%D8%B3%D8%AA-%D8%A8%D9%88%D9%85/"}>
               <Image
-                src="/images/shared/twitter.png"
-                alt=""
-                width="38"
-                height="38"
-                />
-            </Link>
-            <Link href={"https://www.facebook.com/aapaamco/"}>
-              <Image
-                src="/images/shared/facebook.png"
+                src="/images/shared/linkedin.png"
                 alt=""
                 width="36"
                 height="36"
@@ -56,13 +48,21 @@ export default function Footer() {
                 height="36"
               />
             </Link>
-            <Link href={"https://www.linkedin.com/company/%D8%B1%D9%88%DB%8C%D8%B4-%DA%AF%D8%B3%D8%AA%D8%B1%D8%B2%DB%8C%D8%B3%D8%AA-%D8%A8%D9%88%D9%85/"}>
+            <Link href={"https://www.facebook.com/aapaamco/"}>
               <Image
-                src="/images/shared/linkedin.png"
+                src="/images/shared/facebook.png"
                 alt=""
                 width="36"
                 height="36"
               />
+            </Link>
+            <Link href={"https://twitter.com/Aapaamgroup"}>
+              <Image
+                src="/images/shared/twitter.png"
+                alt=""
+                width="38"
+                height="38"
+                />
             </Link>
           </div>
         </div>
@@ -89,11 +89,13 @@ export default function Footer() {
             <div className="text-container">
               <div className="d-flex mb-2">
                 <i className="fa-solid fa-envelope" style={{marginTop:"5px",marginInlineEnd:"10px",color:"#e0ebec"}}></i>
-                <span className="footer-text">info@aapaam.net</span>
+                <a href="mailto:info@aapaam.net"> <span className="footer-text">info@aapaam.net</span> </a>
               </div>
               <div className="d-flex mb-2">
                 <i className="fa-solid fa-phone" style={{marginTop:"5px",marginInlineEnd:"10px",color:"#e0ebec"}}></i>
-                <span className="footer-text">02191010343 - 09123582419</span>
+                <a href="tel:02191010343"><span className="footer-text">02191010343 </span> </a> 
+                <span className="footer-text mx-2">-</span> 
+                <a href="tel:09123582419"><span className="footer-text">09123582419 </span> </a> 
               </div>
               <div className="d-flex mb-2">
                 <i className="fa-brands fa-usps" style={{marginTop:"5px",marginInlineEnd:"10px",color:"#e0ebec"}}></i>
