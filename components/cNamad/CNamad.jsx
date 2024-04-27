@@ -71,7 +71,11 @@ const CNamadCompanyDetail = ({ data }) => {
             </div>
             <div className={styles.item}>
               <span className={styles.itemTitle}>آدرس وب سایت:</span>
-              <span className={styles.itemSubtitle}>{data.webSite ? data.webSite : "-"}</span>
+              {data.webSite ?  
+                <a href={!data.webSite.startsWith('http') ? `https://${data.webSite}` : data.webSite} target="_blank"> 
+                  <span className={styles.itemSubtitle}>{data.webSite}</span> 
+                </a>
+              : <span className={styles.itemSubtitle}> - </span>} 
             </div>
             <div className={styles.item}>
               <span className={styles.itemTitle}>مقدار کربن خریداری شده:</span>
@@ -248,7 +252,7 @@ const CNamadCompanyTrees = ({ data }) => {
 
         data.trees.map((tree) => {
           return (
-                <div className='col-2 col-md-1' key={tree._id}>
+                <div className='col-2 col-md-1 mb-3' key={tree._id}>
                   <span className={styles.tree}> {tree.code} </span>
                 </div>
               );

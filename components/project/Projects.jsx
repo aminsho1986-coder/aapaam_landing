@@ -73,52 +73,52 @@ const ProjectsSection = ({ data }) => {
 
   return (
     <section className={`${styles.projects} body-container`}>
-        <div className="row my-5 w-100 d-flex justify-content-center">
-          <div className="col-md-3" style={{width:"auto"}}>
-            <div className={styles.type} onClick={() => cat === "afforestation" ? setcat("all") : setcat("afforestation")} >
-              <div className={cat === "afforestation" ? `${styles.projectTypeItem} ${styles.active}` : styles.projectTypeItem} >
-                <div className={styles.imgContainer}>
-                  <Image src={"/images/projects/project-type1.svg"} width="50" height="50" />
-                </div>
-                <span className={styles.bottomText}>جنگل کاری</span>
-                <div className={styles.textBack}></div>
+      <div className="row my-5 w-100 d-flex justify-content-center">
+        <div className="col-md-3" style={{width:"auto"}}>
+          <div className={styles.type} onClick={() => cat === "afforestation" ? setcat("all") : setcat("afforestation")} >
+            <div className={cat === "afforestation" ? `${styles.projectTypeItem} ${styles.active}` : styles.projectTypeItem} >
+              <div className={styles.imgContainer}>
+                <Image src={"/images/projects/project-type1.svg"} width="50" height="50" />
               </div>
-            </div>
-          </div>
-          <div className="col-md-3" style={{width:"auto"}}>
-            <div className={styles.types} onClick={() =>{cat === "cleanEnergy" ? setcat("all") : setcat("cleanEnergy")}} >
-              <div className={cat === "cleanEnergy" ? `${styles.projectTypeItem} ${styles.active}` : styles.projectTypeItem} >
-                <div className={styles.imgContainer}>
-                  <Image src={"/images/projects/project-type2.svg"} width="50" height="50" />
-                </div>
-                <span className={styles.bottomText}> انرژی های پاک </span>
-                <div className={styles.textBack}></div>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-3" style={{width:"auto"}}>
-            <div className={styles.types} onClick={() =>{ cat === "energyEfficiency" ? setcat("all") : setcat("energyEfficiency")}} >
-              <div className={cat === "energyEfficiency" ? `${styles.projectTypeItem} ${styles.active}` : styles.projectTypeItem} >
-                <div className={styles.imgContainer}>
-                  <Image src={"/images/projects/project-type3.svg"} width="50" height="50" />
-                </div>
-                <span className={styles.bottomText}> بهره وری انرژی </span>
-                <div className={styles.textBack}></div>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-3" style={{width:"auto"}}>
-            <div className={styles.types} onClick={() =>{ cat === "waterManagement" ? setcat("all") : setcat("waterManagement")}} >
-              <div className={cat === "waterManagement" ? `${styles.projectTypeItem} ${styles.active}` : styles.projectTypeItem} >
-                <div className={styles.imgContainer}>
-                  <Image src={"/images/projects/project-type4.svg"} width="50" height="50" />
-                </div>
-                <span className={styles.bottomText}>مدیریت آب</span>
-                <div className={styles.textBack}></div>
-              </div>
+              <span className={styles.bottomText}>جنگل کاری</span>
+              <div className={styles.textBack}></div>
             </div>
           </div>
         </div>
+        <div className="col-md-3" style={{width:"auto"}}>
+          <div className={styles.types} onClick={() =>{cat === "cleanEnergy" ? setcat("all") : setcat("cleanEnergy")}} >
+            <div className={cat === "cleanEnergy" ? `${styles.projectTypeItem} ${styles.active}` : styles.projectTypeItem} >
+              <div className={styles.imgContainer}>
+                <Image src={"/images/projects/project-type2.svg"} width="50" height="50" />
+              </div>
+              <span className={styles.bottomText}> انرژی های پاک </span>
+              <div className={styles.textBack}></div>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-3" style={{width:"auto"}}>
+          <div className={styles.types} onClick={() =>{ cat === "energyEfficiency" ? setcat("all") : setcat("energyEfficiency")}} >
+            <div className={cat === "energyEfficiency" ? `${styles.projectTypeItem} ${styles.active}` : styles.projectTypeItem} >
+              <div className={styles.imgContainer}>
+                <Image src={"/images/projects/project-type3.svg"} width="50" height="50" />
+              </div>
+              <span className={styles.bottomText}> بهره وری انرژی </span>
+              <div className={styles.textBack}></div>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-3" style={{width:"auto"}}>
+          <div className={styles.types} onClick={() =>{ cat === "waterManagement" ? setcat("all") : setcat("waterManagement")}} >
+            <div className={cat === "waterManagement" ? `${styles.projectTypeItem} ${styles.active}` : styles.projectTypeItem} >
+              <div className={styles.imgContainer}>
+                <Image src={"/images/projects/project-type4.svg"} width="50" height="50" />
+              </div>
+              <span className={styles.bottomText}>مدیریت آب</span>
+              <div className={styles.textBack}></div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div className="container-fluid px-md-5 px-0" >
         <div className={styles.right}>
