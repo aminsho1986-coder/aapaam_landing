@@ -119,6 +119,15 @@
           width: 100%;
           text-align: end;
         }
+        a{
+          font-size: 1.2rem;
+          color: var(--blue-500);
+          @media (max-width: 450px) {
+            font-size: 0.9rem;
+            width: 100%;
+            text-align: end;
+        }
+        }
       }
     }
   }

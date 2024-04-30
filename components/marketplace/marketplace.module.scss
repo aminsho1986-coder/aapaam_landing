@@ -69,15 +69,11 @@
         padding: 12px 4px;
       }
       img {
-        width: 250px;
-        height: 250px;
-        @media (max-width: 1200px) {
-          width: 250px;
-          height: 250px;
-        }
-        @media (max-width: 1200px) {
-          width: 200px;
-          height: 200px;
+        width: 200px;
+        height: 200px;
+        @media (max-width: 800px) {
+          width: 150px;
+          height: 150px;
         }
       }
       span:nth-child(2) {

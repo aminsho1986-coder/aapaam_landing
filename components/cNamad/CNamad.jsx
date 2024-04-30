@@ -72,9 +72,11 @@ const CNamadCompanyDetail = ({ data }) => {
             <div className={styles.item}>
               <span className={styles.itemTitle}>آدرس وب سایت:</span>
               {data.webSite ?  
-                <a href={!data.webSite.startsWith('http') ? `https://${data.webSite}` : data.webSite} target="_blank"> 
-                  <span className={styles.itemSubtitle}>{data.webSite}</span> 
-                </a>
+                <span className={styles.itemSubtitle}>
+                  <a href={!data.webSite.startsWith('http') ? `https://${data.webSite}` : data.webSite} target="_blank"> 
+                    {data.webSite}
+                  </a>
+                </span> 
               : <span className={styles.itemSubtitle}> - </span>} 
             </div>
             <div className={styles.item}>

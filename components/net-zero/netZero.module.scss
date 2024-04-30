@@ -182,10 +182,10 @@
 }
 .questionItem:nth-child(2n + 1) {
   .textContainer {
-    margin-right: 16px;
+    margin-left: 16px;
     padding: 0 64px 0 32px;
     @media (max-width: 1250px) {
-      margin-right: 8px;
+      margin-left: 8px;
       padding: 0 16px 0 8px;
     }
     @media (max-width: 1050px) {
@@ -194,9 +194,9 @@
     }
   }
   .imgContainer {
-    margin-left: 16px;
+    margin-right: 16px;
     @media (max-width: 1250px) {
-      margin-left: 8px;
+      margin-right: 8px;
     }
     @media (max-width: 1050px) {
       margin: 0;
@@ -207,10 +207,10 @@
 .questionItem:nth-child(2n) {
   flex-direction: row-reverse;
   .textContainer {
-    margin-left: 16px;
+    margin-right: 16px;
     padding: 0 32px 0 64px;
     @media (max-width: 1250px) {
-      margin-left: 8px;
+      margin-right: 8px;
       padding: 0 0px 0 28px;
     }
     @media (max-width: 1050px) {
@@ -219,9 +219,9 @@
     }
   }
   .imgContainer {
-    margin-right: 16px;
+    margin-left: 16px;
     @media (max-width: 1250px) {
-      margin-right: 8px;
+      margin-left: 8px;
     }
     @media (max-width: 1050px) {
       margin: 0;

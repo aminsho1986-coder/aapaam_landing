@@ -111,8 +111,8 @@ const MarketplaceRoundImages = () => {
           <Image
             src="/images/marketplace/item1.png"
             alt=""
-            width="250"
-            height="250"
+            width="200"
+            height="200"
           />
           <span className={styles.description}>
           مسیر نت زیرو
@@ -125,8 +125,8 @@ const MarketplaceRoundImages = () => {
           <Image
             src="/images/marketplace/item2.png"
             alt=""
-            width="250"
-            height="250"
+            width="200"
+            height="200"
           />
           <span className={styles.description}>
           ارزیابی کربن
@@ -139,8 +139,8 @@ const MarketplaceRoundImages = () => {
           <Image
             src="/images/marketplace/item3.png"
             alt=""
-            width="250"
-            height="250"
+            width="200"
+            height="200"
           />
           <span className={styles.description}> 
           پروژه‌های جبران کربن 
