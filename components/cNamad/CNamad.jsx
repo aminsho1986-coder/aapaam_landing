@@ -66,7 +66,7 @@ const CNamadCompanyDetail = ({ data }) => {
           <span className={styles.cNamadTitle}>مشخصات :</span>
           <div className={styles.textsContainer}>
             <div className={styles.item}>
-              <span className={styles.itemTitle}>نام کسب و کار:</span>
+              <span className={styles.itemTitle}> نام:</span>
               <span className={styles.itemSubtitle}>{data.companyName}</span>
             </div>
             <div className={styles.item}>
@@ -142,7 +142,7 @@ const CNamadCompanyExperience = ({data}) => {
     <div className={styles.companyExperience}>
       <span className={`${styles.cNamadTitle} pe-4 pe-md-0`}> درباره ی این نماد : </span>
       <span className={`${styles.cNamadDescription} px-5 px-md-0`}>
-      این مجموعه در راستای حمایت از محیط زیست بخشی از رد پای کربن خود را با مشارکت در پروژه {data.projects[0].title}  جبران نموده است.  
+      این مجموعه در راستای حمایت از محیط زیست بخشی از رد پای کربن خود را با مشارکت در پروژه {data.projects[0].project.title}  جبران نموده است.  
       </span>
     </div>
   );
@@ -194,7 +194,7 @@ const CNamadCompanyInvestments = ({ data }) => {
       <div className={styles.projectsContainer}>
         {data.projects ? data.projects.map((project) => {
           return (
-            <div  key={project._id}>
+            <div key={project._id}>
               <div className={styles.projectItem}>
                 <div className={styles.itemContent}>
                   <Image
