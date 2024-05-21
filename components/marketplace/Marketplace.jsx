@@ -21,7 +21,7 @@ export default function Marketplace() {
         "اگر شما یک فروشگاه آنلاین، و یا پلتفرم ارائه دهنده حمل و نقل و یا ارسال بار اینترنتی هستید، با این کلید API میتوانید امکان خرید خدمات و محصولات کربن صفر را در اختیار مشتریان خود بگذارید. برای استفاده از این سرویس لازم است ردپای کربن سالانه کسب و کارتان را در محدوده یک و دو ارزیابی و جبران کنید.",
       button: "استفاده از API",
       isBlue: true,
-      mainImg: "/images/company/question-img1.webp",
+      mainImg: "/images/marketplace/api.JPG",
     },
     {
       title: "گرفتن نماد در قالب کد HTML",
@@ -30,7 +30,7 @@ export default function Marketplace() {
         "اگر در برنامه های آپام مشارکت کرده اید و ردپای کربن خود را جبران کرده اید، میتوانید نماد کسب و کار سبز را به دو صورت  “نماد کربن صفر “و یا “نماد نت زرو” در وبسایت خود را در قالب کدHTML زیر درج نمایید. با نشان دادن این نماد مشتریان شما از ارزش مسئولیت محیط زیستی در کسب و کار شما آگاه میشوند.",
       button: "دریافت HTML Code",
       isBlue: false,
-      mainImg: "/images/company/question-img1.webp",
+      mainImg: "/images/marketplace/badge.JPG",
     },
     {
       title: "استفاده از QR Code",
@@ -39,7 +39,7 @@ export default function Marketplace() {
         "اگر شما علاقه مند به ارائه محصولات کربن صفر به مشتریانتان هستید، با ارائه QR code برای هر گروه محصولتان میتوانید امکان خرید سبز را در اختیار مشتریان خود بگذارید. برای استفاده از این سرویس لازم است ردپای کربن سالانه کسب و کارتان را در محدوده یک و دو ارزیابی و جبران کنید. QR code درج شده حاوی اطلاعات رد پای کربن و نحوه ی جبران رد پای کربن آن محصول میباشد.",
       button: "دریافت QR Code",
       isBlue: true,
-      mainImg: "/images/company/question-img1.webp",
+      mainImg: "/images/marketplace/qrcode.JPG",
     },
   ]);
 
