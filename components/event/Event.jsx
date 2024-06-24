@@ -49,15 +49,15 @@ export default function Event() {
   const [lifeStyleData] = useState([
     {
       id: "1",
-      img: "/images/individual/life-style1.jpg",
+      img: "/images/individual/ind1.PNG",
     },
     {
       id: "2",
-      img: "/images/individual/life-style1.jpg",
+      img: "/images/individual/ind2.PNG",
     },
     {
       id: "3",
-      img: "/images/individual/life-style1.jpg",
+      img: "/images/individual/ind3.PNG",
     },
   ]);
   return (

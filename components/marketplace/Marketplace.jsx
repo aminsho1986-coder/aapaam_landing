@@ -109,7 +109,7 @@ const MarketplaceRoundImages = () => {
       <div className={styles.imgRow}>
         <div className={styles.sectionItem}>
           <Image
-            src="/images/marketplace/item1.png"
+            src="/images/marketplace/item1.PNG"
             alt=""
             width="200"
             height="200"
@@ -123,7 +123,7 @@ const MarketplaceRoundImages = () => {
         </div>
         <div className={styles.sectionItem}>
           <Image
-            src="/images/marketplace/item2.png"
+            src="/images/marketplace/item2.PNG"
             alt=""
             width="200"
             height="200"
@@ -137,10 +137,10 @@ const MarketplaceRoundImages = () => {
         </div>
         <div className={styles.sectionItem}>
           <Image
-            src="/images/marketplace/item3.png"
+            src="/images/marketplace/item3.PNG"
             alt=""
-            width="200"
-            height="200"
+            width="180"
+            height="180"
           />
           <span className={styles.description}> 
           پروژه‌های جبران کربن 

@@ -21,10 +21,10 @@ export default function LifeStyle({ data }) {
                 className="main-img"
                 src={item.img}
                 alt=""
-                width="390"
-                height="260"
+                width="490"
+                height="360"
               />
-              <div className="download-container">
+              {/* <div className="download-container">
                 <span> دانلود </span>
                 <Image
                   src="/images/shared/download.png"
@@ -32,7 +32,7 @@ export default function LifeStyle({ data }) {
                   width="32"
                   height="32"
                 />
-              </div>
+              </div> */}
             </div>
           );
         })}
