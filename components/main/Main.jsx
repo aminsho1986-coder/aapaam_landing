@@ -823,7 +823,7 @@ const ForestSection = () => {
       <div className="forest-left">
         <Image
           className="main-forest-img"
-          src="/images/main/jungle.webp"
+          src="/images/main/jungle.jpeg"
           alt=""
           width="700"
           height="420"
@@ -858,7 +858,7 @@ const WorkSection = () => {
       </div>
 
       <div className="calculate-right">
-       <Image src="/images/main/offset.webp" alt="" width="700" height="420" priority />
+       <Image src="/images/main/offset.jpeg" alt="" width="700" height="420" priority />
       </div>
     </section>
   );
