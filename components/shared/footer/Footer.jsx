@@ -103,7 +103,7 @@ export default function Footer() {
               </div>
               <div className="d-flex">
                 <i className="fa-solid fa-location-dot" style={{marginTop:"5px",marginInlineEnd:"10px",color:"#e0ebec"}}></i>
-                <span className="footer-text"> تهران- میدان آزادی-اتوبان شهید لشگری بعد از ایستگاه مترو بیمه پلاک 31 ساختمان کارخانه نوآوری آزادی سالن زاویه </span>
+                <span className="footer-text"> تهران ، میدان آزادی ، اتوبان شهید لشگری بعد از ایستگاه مترو بیمه ، پلاک 31 ، ساختمان کارخانه نوآوری آزادی ، سالن زاویه </span>
               </div>
             </div>
           </div>

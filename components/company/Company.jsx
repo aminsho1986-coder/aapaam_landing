@@ -31,21 +31,21 @@ export default function Company({ serverStatus, serverData }) {
       title: "ردپای کربن سالانه کسب و کار شما چطور محاسبه می‌شود؟",
       description:
         "ردپای کربن سالانه یک کسب و کار شامل اندازه‌گیری و ارزیابی انتشار گازهای گلخانه‌ای در سه محدوده مختلف عملیاتی است.",
-      mainImg: "/images/company/question-img1.webp",
+      mainImg: "/images/company/question-img1.jpg",
     },
     {
       id: "2",
       title: "بهترین پروژه برای جبران انتشار کسب و کار شما چه می‌باشد؟",
       description:
         "با مراجعه به صفحه پروژه ها و انتخاب پروژه مورد نظر خود می توانید به راحتی پروژه کربن  را انتخاب کنید. این پروژه ها در دسته بندی های مختلفی مانند انرژی های تجدیدپذیر، حفاظت از جنگل ها، بهره وری انرژی و غیره موجود می باشند.",
-      mainImg: "/images/company/question-img1.webp",
+      mainImg: "/images/company/question-img2.jpg",
     },
     {
       id: "3",
       title: "برنامه های ما",
       description:
         "با خرید هر یک از طرح‌های ارزیابی کربن، می‌توانید از انتشار کربن خود در اتمسفر باخبر شوید و در کاهش و جبران اثرات گلخانه‌ای به ما بپیوندید. از شما دعوت می کنیم در تلاش برای کاهش و جبران اثرات انتشار کربن بر محیط زیست به خصوص تغییرات اقلیم با ما همراه شوید.",
-      mainImg: "/images/company/question-img1.webp",
+      mainImg: "/images/company/question-img3.jpg",
     },
   ]);
   const [stepsData] = useState({
