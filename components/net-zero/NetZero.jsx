@@ -72,14 +72,14 @@ export default function NetZero({ serverStatus, serverData }) {
       description:
         "مسیر نت زیرو 2030 نقشه‌راهی است برای کاهش تدریجی انتشار گازهای گلخانه‌ای همراه با گزارش خوداظهاری در راستای شفافیت در این مسیر؛ و مسیر نت زیرو 2050 با هدف بلند مدت کربن خنثی کامل در این سه دهه پیش‌روی می‌باشد.",
       mainImg: "/images/netZero/netzero1.jpg",
-      pdf: "/files/Evaluation.pdf"
+      pdf: "/files/Netzero.pdf"
     },
     {
       title: "چگونه می‌توانید ردپای سالانه خود را محاسبه کنید؟",
       description:
         "محاسبه ردپای سالانه شما با استفاده از سرویس تحت‌ وب ما بسیار آسان است!  با انتخاب برنامه مناسب کسب و کارخود، داده‌ها را وارد کنید و طبق دستورالعمل ما پیش‌ روید و از دیدگاه ما درباره تاثیرات زیست محیطی خود کمک بگیرید.",
       mainImg: "/images/netZero/netzero2.png",
-      pdf: "/files/Netzero.pdf"
+      pdf: "/files/Evaluation.pdf"
     },
   ]);
 
