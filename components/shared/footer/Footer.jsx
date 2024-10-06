@@ -93,13 +93,13 @@ export default function Footer() {
               </div>
               <div className="d-flex mb-2">
                 <i className="fa-solid fa-phone" style={{marginTop:"5px",marginInlineEnd:"10px",color:"#e0ebec"}}></i>
-                <a href="tel:02191010343"><span className="footer-text">02191010343 </span> </a> 
+                <a href="tel:02191098221" dir="ltr"><span className="footer-text">021-91098221 </span> </a> 
                 <span className="footer-text mx-2">-</span> 
                 <a href="tel:09123582419"><span className="footer-text">09123582419 </span> </a> 
               </div>
               <div className="d-flex mb-2">
                 <i className="fa-brands fa-usps" style={{marginTop:"5px",marginInlineEnd:"10px",color:"#e0ebec"}}></i>
-                <span className="footer-text">1391955385</span>
+                <span className="footer-text">02191098221</span>
               </div>
               <div className="d-flex">
                 <i className="fa-solid fa-location-dot" style={{marginTop:"5px",marginInlineEnd:"10px",color:"#e0ebec"}}></i>
