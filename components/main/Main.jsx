@@ -267,9 +267,6 @@ const HeaderSection = () => {
         </span>
         
         <div className="header-items-container">
-          <Link href="/individual">
-            <button className="header-items transparent-button"> جبران انتشار کربن فردی </button>
-          </Link>
           <Link href="/company">
             <button className="header-items transparent-button">جبران انتشار کربن شرکت</button>
           </Link>
