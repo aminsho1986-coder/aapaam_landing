@@ -2,6 +2,7 @@ import CNamad from "@/components/cNamad/CNamad";
 
 import serverSideFetching from "@/hooks/ServerFetch";
 import apiList from "@/hooks/fetchData";
+import safeJson from "@/hooks/safeJson";
 
 
 const getData = async (id) => {
@@ -14,7 +15,7 @@ const getData = async (id) => {
 const ProjectPage = async ({ params }) => {
   let data = await getData(params.id);
   let status = data.ok;
-  let response = await data.json();
+  let response = await safeJson(data);
   return (
     <div>
       <CNamad serverStatus={status} serverData={response} />

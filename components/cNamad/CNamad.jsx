@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 
 export default function CNamad({ serverStatus, serverData }) {
 
+  const hasData = serverData && serverData.companyName;
 
   return (
     <>
@@ -15,7 +16,7 @@ export default function CNamad({ serverStatus, serverData }) {
       <div className={styles.cNamadBody}>
         <div className={styles.cNamadBodyContent}>
           {
-            serverStatus ? 
+            serverStatus && hasData ?
             <>
             <CNamadCompanyDetail data={serverData} />
             {
@@ -34,7 +35,7 @@ export default function CNamad({ serverStatus, serverData }) {
               <p>{serverData.message}</p>
             </div>
           }
-          <CNamadCompanyExperience data={serverData}/>
+          {hasData && <CNamadCompanyExperience data={serverData}/>}
           <CNamadBottomImg />
         </div>
       </div>

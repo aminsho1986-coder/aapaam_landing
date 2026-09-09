@@ -2,6 +2,7 @@ import NetZero from "@/components/net-zero/NetZero";
 
 import serverSideFetching from "@/hooks/ServerFetch";
 import apiList from "@/hooks/fetchData";
+import safeJson from "@/hooks/safeJson";
 
 const getData = async () => {
   let data = await serverSideFetching(apiList.getAllPackages, {
@@ -15,7 +16,7 @@ const getData = async () => {
 const NetZeroPage = async () => {
   let data = await getData();
   let status = data.ok;
-  let response = await data.json();
+  let response = await safeJson(data, []);
   return (
     <div>
       <NetZero serverStatus={status} serverData={response} />

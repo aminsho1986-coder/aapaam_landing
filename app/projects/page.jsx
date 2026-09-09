@@ -2,6 +2,7 @@ import Projects from "@/components/project/Projects";
 
 import serverSideFetching from "@/hooks/ServerFetch";
 import apiList from "@/hooks/fetchData";
+import safeJson from "@/hooks/safeJson";
 
 const getData = async () => {
   let data = await serverSideFetching(apiList.getAllProjects);
@@ -15,7 +16,7 @@ const ProjectsPage = async () => {
   let response = [];
   try {
     let data = await getData();
-    response = await data.json();
+    response = await safeJson(data, []);
   } catch (error) { }
 
   response ? response.map((item) => {

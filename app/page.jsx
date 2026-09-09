@@ -2,6 +2,7 @@ import Main from "@/components/main/Main";
 
 import serverSideFetching from "@/hooks/ServerFetch";
 import apiList from "@/hooks/fetchData";
+import safeJson from "@/hooks/safeJson";
 
 
 const getData = async () => {
@@ -21,9 +22,9 @@ const Home = async () => {
   try {
 
     let data = await getData();
-    response = await data.json();
+    response = await safeJson(data);
     let bannersData = await getBannersData();
-    bannersResponse = await bannersData.json();
+    bannersResponse = await safeJson(bannersData);
 
   } catch (err) {
     console.log(err);

@@ -2,6 +2,7 @@ import SingleProject from "@/components/project-single/SingleProject";
 
 import serverSideFetching from "@/hooks/ServerFetch";
 import apiList from "@/hooks/fetchData";
+import safeJson from "@/hooks/safeJson";
 
 const getData = async (projectId) => {
   let data = await serverSideFetching(apiList.getProject, {
@@ -14,7 +15,7 @@ const getData = async (projectId) => {
 const ProjectPage = async ({ params }) => {
   let data = await getData(params.projectId);
   let status = data.ok;
-  let response = await data.json();
+  let response = await safeJson(data);
   return (
     <div>
       <SingleProject serverStatus={status} serverData={response} />
