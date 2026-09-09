@@ -115,10 +115,10 @@ const MarketplaceRoundImages = () => {
             height="200"
           />
           <span className={styles.description}>
-          مسیر نت زیرو
+          جبران کربن
           </span>
           <span className={styles.description}>
-          ترسیم مسیر در راه دستیابی به هدف کربن خنثی
+          جبران و خنثی‌سازی ردپای کربن فعالیت‌های شما
           </span>
         </div>
         <div className={styles.sectionItem}>

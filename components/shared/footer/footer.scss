@@ -167,6 +167,28 @@
     color: #fff;
   }
 }
+.footer-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 24px;
+  max-width: 560px;
+  .footer-tag {
+    color: #e0ebec;
+    font-size: 0.85rem;
+    font-weight: lighter;
+    opacity: 0.8;
+  }
+  @media (max-width: 850px) {
+    padding-top: 28px;
+    max-width: 100%;
+  }
+  @media (max-width: 500px) {
+    .footer-tag {
+      font-size: 0.75rem;
+    }
+  }
+}
 .footer-rights{
   margin-top: 20px;
   padding-top: 20px;

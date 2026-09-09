@@ -29,7 +29,7 @@ export default function Footer() {
             </div>
           </div>
           <span>
-          آپام یک پلتفرم نرم‌افزار به‌عنوان سرویس (SaaS) است که به کسب‌وکارها و افراد این امکان را می‌دهد تا ردپای کربن خود را کاهش دهند و تأثیر واقعی در مبارزه با تغییرات آب و هوایی بگذارند.
+          آپام یک پلتفرم نرم‌افزار به‌عنوان سرویس (SaaS) است که به کسب‌وکارها این امکان را می‌دهد تا ردپای کربن خود را کاهش دهند و تأثیر واقعی در مبارزه با تغییرات آب و هوایی بگذارند.
           </span>
           <div className="media-row">
             <Link href={"https://www.linkedin.com/company/%D8%B1%D9%88%DB%8C%D8%B4-%DA%AF%D8%B3%D8%AA%D8%B1%D8%B2%DB%8C%D8%B3%D8%AA-%D8%A8%D9%88%D9%85/"}>
@@ -65,6 +65,16 @@ export default function Footer() {
                 />
             </Link>
           </div>
+          <div className="footer-tags">
+            <span className="footer-tag">#جبران_کربن</span>
+            <span className="footer-tag">#کربن_صفر</span>
+            <span className="footer-tag">#ارزیابی_کربن</span>
+            <span className="footer-tag">#پروژه‌های_محیط_زیستی</span>
+            <span className="footer-tag">#جنگل‌کاری</span>
+            <span className="footer-tag">#اقدام_اقلیمی</span>
+            <span className="footer-tag">#پایداری_زیست_محیطی</span>
+            <span className="footer-tag">#اعتبار_کربن</span>
+          </div>
         </div>
         <div className="footer-right">
           <div className="left">
@@ -73,37 +83,17 @@ export default function Footer() {
               <Link href="/company">
                 <span className="footer-text"> شرکت ها </span>
               </Link>
-              <Link href="/individual">
-                <span className="footer-text"> اشخاص </span>
-              </Link>
               <Link href="/event">
                 <span className="footer-text"> رویداد ها </span>
-              </Link>
-              <Link href="/net-zero">
-                <span className="footer-text"> نت زیرو </span>
               </Link>
             </div>
           </div>
           <div className="right">
             <span className="footer-title"> تماس </span>
             <div className="text-container">
-              <div className="d-flex mb-2">
-                <i className="fa-solid fa-envelope" style={{marginTop:"5px",marginInlineEnd:"10px",color:"#e0ebec"}}></i>
-                <a href="mailto:info@aapaam.net"> <span className="footer-text">info@aapaam.net</span> </a>
-              </div>
-              <div className="d-flex mb-2">
-                <i className="fa-solid fa-phone" style={{marginTop:"5px",marginInlineEnd:"10px",color:"#e0ebec"}}></i>
-                <a href="tel:02191098221" dir="ltr"><span className="footer-text">021-91098221 </span> </a> 
-                <span className="footer-text mx-2">-</span> 
-                <a href="tel:09123582419"><span className="footer-text">09123582419 </span> </a> 
-              </div>
-              <div className="d-flex mb-2">
-                <i className="fa-brands fa-usps" style={{marginTop:"5px",marginInlineEnd:"10px",color:"#e0ebec"}}></i>
-                <span className="footer-text">02191098221</span>
-              </div>
               <div className="d-flex">
-                <i className="fa-solid fa-location-dot" style={{marginTop:"5px",marginInlineEnd:"10px",color:"#e0ebec"}}></i>
-                <span className="footer-text"> تهران ، میدان آزادی ، اتوبان شهید لشگری بعد از ایستگاه مترو بیمه ، پلاک 31 ، ساختمان کارخانه نوآوری آزادی ، سالن زاویه </span>
+                <i className="fa-solid fa-envelope" style={{marginTop:"5px",marginInlineEnd:"10px",color:"#e0ebec"}}></i>
+                <a href="mailto:aapaam.group@gmail.com"> <span className="footer-text">aapaam.group@gmail.com</span> </a>
               </div>
             </div>
           </div>

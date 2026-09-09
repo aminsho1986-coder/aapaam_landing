@@ -62,17 +62,7 @@ export default function Main({ serverData }) {
           router.push(`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/offset`);
         },
       },
-      {
-        id: "4",
-        img: "/images/main/step4.svg",
-        imgWidth: 90,
-        imgHeight: 90,
-        firstString: "مسیر",
-        secondString: "نت زیرو",
-        onClick: function () {
-          router.push(`${process.env.NEXT_PUBLIC_DOMAIN}/dashboard/net-zero`);
-        },
-      },
+
     ],
   });
   const [FAQData] = useState([
@@ -190,9 +180,7 @@ export default function Main({ serverData }) {
       {/* <!-- =====================START WORKS SECTION========================== --> */}
       <WorkSection />
       {/* <!-- =====================END WORKS SECTION========================== --> */}
-      {/* <!-- =====================START JOURNEY SECTION========================== --> */}
-      <JourneySection />
-      {/* <!-- =====================END JOURNEY SECTION========================== --> */}
+
       {/* <!-- =====================START SELLS SECTION========================== --> */}
       <SellsSection />
       {/* <!-- =====================END SELLS SECTION========================== --> */}
@@ -753,9 +741,6 @@ const CalculateSection = () => {
           محاسبه کربن شما، فقط با اشتراک‌گذاری اطلاعات فردی یا شرکت خود.
         </span>
         <div className="calculate-button-row">
-          <Link href="/individual">
-            <button className="blue-light-button"> افراد </button>
-          </Link>
           <Link href="/company">
             <button className="blue-light-button"> شرکت ها </button>
           </Link>
@@ -861,43 +846,7 @@ const WorkSection = () => {
   );
 };
 
-const JourneySection = () => {
-  return (
-    <section className="journey body-container">
-      <div className="journey-img">
-        <Image
-          src="/images/main/numbers-left.png"
-          alt=""
-          className="top-left"
-          width="240"
-          height="260"
-        />
-        <Image
-          src="/images/main/journey-right.png"
-          alt=""
-          className="bottom-right"
-          width="240"
-          height="260"
-        />
-        <span> قدم چهارم، شروع مسیر نت زیرو (Net-Zero) </span>
-        <span>
-        نت‌زیرو یک سرویس مداوم شخصی‌سازی شده برای کسب و کارها می‌باشد؛ تا کسب و کارها در قالب برنامه‌های سالانه ردپای کربن خود را کاهش دهند. با پیوستن به این جنبش جهانی، کسب و کارها برای رسیدن به هدف 1.5 درجه سانتی گراد توافق پاریس کمک خواهند کرد
-        </span>
-        <div className="buttonRow">
-          <Link href="/net-zero/#plans">
-            <button className="blueLightButton blue-light-button">
-              <span className="buttonText"> بپیوندید </span>
-            </button>
-          </Link>
-          <Link href="/net-zero">
-            <button className="white-button-light-blue-text"> بیشتر بدانید </button>
-          </Link>
-        </div>
-        <div className="green-linear"></div>
-      </div>
-    </section>
-  );
-};
+
 
 const SellsSection = () => {
   return (
@@ -1063,11 +1012,6 @@ const EndPageSection = () => {
         اکنون برای محافظت از زمین، می‌توانید به جامعه جبران‌کنندگان کربن بپیوندید!
         </span>
         <div className='buttonRow'>
-          <Link href="/individual">
-            <button className="white-button-light-blue-text">
-            برای اشخاص
-            </button>
-          </Link>
           <Link href="/company">
             <button className="white-button-light-blue-text">
             برای شرکت ها
