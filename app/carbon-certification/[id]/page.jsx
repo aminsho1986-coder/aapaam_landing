@@ -12,9 +12,15 @@ const getData = async (id) => {
 };
 
 const ProjectPage = async ({ params }) => {
-  let data = await getData(params.id);
-  let status = data.ok;
-  let response = await data.json();
+  let status = false;
+  let response = {};
+  try {
+    let data = await getData(params.id);
+    response = await data.json();
+    status = data.ok;
+  } catch (err) {
+    console.warn("CarbonCertificationPage: remote API returned non-JSON, rendering with empty data");
+  }
   return (
     <div>
       <CNamad serverStatus={status} serverData={response} />

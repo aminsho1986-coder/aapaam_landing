@@ -13,9 +13,15 @@ const getData = async () => {
 
 
 const NetZeroPage = async () => {
-  let data = await getData();
-  let status = data.ok;
-  let response = await data.json();
+  let status = false;
+  let response = [];
+  try {
+    let data = await getData();
+    response = await data.json();
+    status = data.ok;
+  } catch (err) {
+    console.warn("NetZeroPage: remote API returned non-JSON, rendering with empty data");
+  }
   return (
     <div>
       <NetZero serverStatus={status} serverData={response} />
