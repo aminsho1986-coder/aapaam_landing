@@ -234,6 +234,12 @@ export default function Main({ serverData }) {
 }
 
 const HeaderSection = () => {
+  useEffect(() => {
+    const video = document.querySelector(".header video");
+    if (video && video.paused) {
+      video.play().catch(() => {});
+    }
+  }, []);
   return (
     <header className="header body-container">
       <video 
