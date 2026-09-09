@@ -1,0 +1,16 @@
+services:
+  web:
+    image: node:18
+    working_dir: /app
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true
+      - WATCHPACK_POLLING=true
+      - BASE44_PUBLIC_HOST_SUFFIX=${BASE44_PUBLIC_HOST_SUFFIX:-}
+      - BASE44_SANDBOX_HOST_DOMAIN=${BASE44_SANDBOX_HOST_DOMAIN:-}
+    command: sh -c "npm install && npx next dev -H 0.0.0.0 -p 3000"
