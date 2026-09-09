@@ -234,53 +234,44 @@ export default function Main({ serverData }) {
 }
 
 const HeaderSection = () => {
-  useEffect(() => {
-    const video = document.querySelector(".header video");
-    if (video && video.paused) {
-      video.play().catch(() => {});
-    }
-  }, []);
   return (
     <header className="header body-container">
-      <video 
-          width="100%" muted loop autoPlay playsInline 
-          style={{
-            position: "absolute",
-            left: 0,
-            top: 0,
-            right: 0,
-            bottom: 0,
-            zIndex: -1,
-            height: "100%",
-            objectFit: "cover"
-          }}
-        >
-          <source type="video/mp4" src="/company/videos/header.mp4"/>
-        </video>
-        
       <div className="header-center-container">
-        <Image
-          className="main-logo"
-          src="/images/main/main-logo.svg"
-          alt=""
-          width="600"
-          height="180"
-        />
-        <span className="title">
-        مسئولیت‌پذیری، اقدام آگاهانه، نجات زمین      
-          <br />
-          با پذیرش نقش خود در جبران انتشار کربن بخشی از راه‌حل باشید
-        </span>
-        
+        <div className="header-hero">
+          <div className="header-logo-block">
+            <Image
+              className="main-logo"
+              src="/images/main/main-logo.svg"
+              alt=""
+              width="600"
+              height="180"
+            />
+          </div>
+          <div className="header-text-block">
+            <span className="header-label">پلتفرم جبران کربن آپام</span>
+            <h1 className="header-headline">با جنگل شریک شو</h1>
+            <span className="header-subtitle">مسئولیت‌پذیری، اقدام آگاهانه، نجات زمین</span>
+            <span className="header-description">با پذیرش نقش خود در جبران انتشار کربن بخشی از راه‌حل باشید.</span>
+          </div>
+        </div>
         <div className="header-items-container">
-          <Link href="/individual">
-            <button className="header-items transparent-button"> جبران انتشار کربن فردی </button>
+          <Link href="/event">
+            <div className="header-card">
+              <Image src="/images/main/main-logo.svg" alt="" width="40" height="40" />
+              <span>جبران انتشار کربن رویداد‌ها</span>
+            </div>
           </Link>
           <Link href="/company">
-            <button className="header-items transparent-button">جبران انتشار کربن شرکت</button>
+            <div className="header-card">
+              <Image src="/images/main/main-logo.svg" alt="" width="40" height="40" />
+              <span>جبران انتشار کربن شرکت</span>
+            </div>
           </Link>
-          <Link href="/event">
-            <button className="header-items transparent-button"> جبران انتشار کربن رویداد‌ها </button>
+          <Link href="/individual">
+            <div className="header-card">
+              <Image src="/images/main/main-logo.svg" alt="" width="40" height="40" />
+              <span>جبران انتشار کربن فردی</span>
+            </div>
           </Link>
         </div>
       </div>
