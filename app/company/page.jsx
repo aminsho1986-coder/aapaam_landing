@@ -12,9 +12,15 @@ const getData = async () => {
 
 
 export default async function CompanyPage() {
-  let data = await getData();
-  let status = data.ok;
-  let response = await data.json();
+  let status = false;
+  let response = [];
+  try {
+    let data = await getData();
+    response = await data.json();
+    status = data.ok;
+  } catch (err) {
+    console.log(err);
+  }
   return (
     <div>
       <Company serverStatus={status} serverData={response} />

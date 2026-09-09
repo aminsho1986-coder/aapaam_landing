@@ -34,7 +34,9 @@ export default function SingleProject({ serverStatus, serverData }) {
       router.push("/projects");
     }
   }, []);
-  
+
+  if (!serverStatus) return null;
+
   return (
     <>
       <Nav />

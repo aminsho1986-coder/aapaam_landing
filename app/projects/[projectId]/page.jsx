@@ -12,9 +12,15 @@ const getData = async (projectId) => {
 
 
 const ProjectPage = async ({ params }) => {
-  let data = await getData(params.projectId);
-  let status = data.ok;
-  let response = await data.json();
+  let status = false;
+  let response = {};
+  try {
+    let data = await getData(params.projectId);
+    response = await data.json();
+    status = data.ok;
+  } catch (err) {
+    console.log(err);
+  }
   return (
     <div>
       <SingleProject serverStatus={status} serverData={response} />
