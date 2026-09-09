@@ -249,7 +249,7 @@ const HeaderSection = () => {
             objectFit: "cover"
           }}
         >
-          <source type="video/mp4" src="/videos/header.mp4"/>
+          <source type="video/mp4" src="/company/videos/header.mp4"/>
         </video>
         
       <div className="header-center-container">

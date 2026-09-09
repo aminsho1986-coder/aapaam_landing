@@ -179,7 +179,7 @@ export default function RootLayout({ children }) {
         <ul className="notifications"></ul>
         {children}
       </body>
-      <Script src="/scripts/fontAwesome.js" />
+      <Script src="/company/scripts/fontAwesome.js" />
     </html>
   );
 }

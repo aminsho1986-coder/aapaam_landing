@@ -153,7 +153,7 @@ const NetZeroHeader = ({ onGoToPlansClick }) => {
           width="920"  
           height="532"  
         >
-          <source type="video/mp4" src="/videos/netzero.mp4"/>
+          <source type="video/mp4" src="/company/videos/netzero.mp4"/>
         </video>
       </div>
       <div onClick={onGoToPlansClick}>
