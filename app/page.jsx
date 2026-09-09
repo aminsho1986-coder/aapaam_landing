@@ -26,7 +26,7 @@ const Home = async () => {
     bannersResponse = await bannersData.json();
 
   } catch (err) {
-    console.log(err);
+    console.warn("Home: remote API returned non-JSON, rendering with empty data");
   }
   return (
     <div>

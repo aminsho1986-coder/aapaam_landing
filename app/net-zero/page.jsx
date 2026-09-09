@@ -20,7 +20,7 @@ const NetZeroPage = async () => {
     response = await data.json();
     status = data.ok;
   } catch (err) {
-    console.log(err);
+    console.warn("NetZeroPage: remote API returned non-JSON, rendering with empty data");
   }
   return (
     <div>
