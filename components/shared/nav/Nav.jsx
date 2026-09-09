@@ -96,7 +96,6 @@ export default function Nav() {
         <div className="nav-center">
           <Link href="/" className={pathname === "/" ? "activeNav" : ""}> خانه </Link>
           <Link href="/projects" className={pathname.includes("/projects") ? "activeNav" : ""}> پروژه ها </Link>
-          <Link href="/company" className={pathname === "/company" ? "activeNav" : ""}> سکوی شرکت ها </Link>
           <Link href="/resources" className={pathname === "/resources" ? "activeNav" : ""}> امکانات</Link>
           <Link href="/about" className={pathname === "/about" ? "activeNav" : ""}> درباره ما </Link>
           {/* <Link href="/mag" className={pathname === "/mag" ? "activeNav" : ""}> اخبار </Link> */}
@@ -124,9 +123,6 @@ export default function Nav() {
             </li>
             <li>
               <Link href="/projects">پروژه ها</Link>
-            </li>
-            <li>
-              <Link href="/company">سکوی شرکت ها</Link>
             </li>
             <li>
               <Link href="/resources">امکانات</Link>
