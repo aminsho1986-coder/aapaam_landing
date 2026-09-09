@@ -11,6 +11,7 @@ import Nav from "../shared/nav/Nav";
 import Steps from "../shared/steps/Steps";
 
 import stylePrice from "@/hooks/stylePrice";
+import CarbonBadges from "../shared/carbon-badges/CarbonBadges";
 
 import styles from "./company.module.scss";
 import "./company.scss";
@@ -126,6 +127,10 @@ export default function Company({ serverStatus, serverData }) {
         isFirstLoad={isFirstLoad}
       />
       {/* <!-- ==========================END PLAN SECTION======================== --> */}
+
+      {/* <!-- ==========================START BADGES SECTION======================== --> */}
+      <CarbonBadges />
+      {/* <!-- ==========================END BADGES SECTION======================== --> */}
 
       {/* <!-- ==========================START HELP SECTION======================== --> */}
       <Help />

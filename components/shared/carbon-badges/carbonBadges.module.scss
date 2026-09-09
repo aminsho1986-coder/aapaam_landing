@@ -1,0 +1,125 @@
+.section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 16px 60px;
+  .title {
+    max-width: 800px;
+    text-align: center;
+    padding-bottom: 64px;
+    @media (max-width: 700px) {
+      padding-bottom: 40px;
+    }
+  }
+}
+
+.badgesRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 64px;
+  @media (max-width: 900px) {
+    gap: 48px;
+  }
+  @media (max-width: 600px) {
+    gap: 32px;
+  }
+}
+
+.badgeItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 220px;
+  @media (max-width: 600px) {
+    width: 180px;
+  }
+}
+
+/* ===== Hexagon ===== */
+.hexagon {
+  width: 200px;
+  height: 230px;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background: #849340;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 28px;
+  @media (max-width: 600px) {
+    width: 170px;
+    height: 195px;
+  }
+}
+
+.hexagonInner {
+  width: 194px;
+  height: 224px;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  @media (max-width: 600px) {
+    width: 164px;
+    height: 189px;
+  }
+}
+
+.treeIcon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 10px;
+  @media (max-width: 600px) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.hexLabel {
+  color: #849340;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.6;
+  @media (max-width: 600px) {
+    font-size: 1.2rem;
+  }
+}
+
+/* ===== Text below hexagon ===== */
+.subLabel {
+  color: #333333;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 16px;
+  line-height: 1.5;
+  @media (max-width: 600px) {
+    font-size: 0.9rem;
+  }
+}
+
+.value {
+  color: #333333;
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 6px;
+  @media (max-width: 600px) {
+    font-size: 1.7rem;
+  }
+}
+
+.unit {
+  color: #666666;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-align: center;
+  @media (max-width: 600px) {
+    font-size: 0.8rem;
+  }
+}
