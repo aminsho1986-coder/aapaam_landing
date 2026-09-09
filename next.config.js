@@ -6,6 +6,11 @@ const nextConfig = {
     loader: "custom",
     loaderFile: "./image-loader.js",
   },
+  async redirects() {
+    return [
+      { source: "/", destination: "/company", permanent: false, basePath: false },
+    ];
+  },
 };
 
 module.exports = nextConfig;
